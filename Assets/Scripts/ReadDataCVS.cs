@@ -14,10 +14,20 @@ public class ReadDataCVS : MonoBehaviour
     [Space]
     public string header;
     public string[] lines;
-    public static List<DialogueLine> dialogueList = new();
+    public List<DialogueLine> dialogueList = new();
+
+    public List<DialoguePair> activeDialogues = new();
+
+    void Awake()
+    {
+        DontDestroyOnLoad(this);
+        ReadFileData();
+        ExtractData();
+        InitDialogues();
+    }
 
     [ContextMenu("Read File")]
-    public void ReadFileData()
+    void ReadFileData()
     {
         dataPathAssets = Application.dataPath;
         //persistentDataPath = Application.persistentDataPath;
@@ -33,7 +43,7 @@ public class ReadDataCVS : MonoBehaviour
     }
 
     [ContextMenu("Extract Data")]
-    public void ExtractData()
+    void ExtractData()
     {
         lines = datosString.Split('\n');
         header = lines[0];
@@ -44,16 +54,17 @@ public class ReadDataCVS : MonoBehaviour
         {
             string[] splittedLine = lines[i].Split(';');
 
-            if (splittedLine.Length == 4)
+            if (splittedLine.Length == header.Split(';').Length)
             {
                 dialogueList.Add(new DialogueLine()
                 {
                     title = splittedLine[0],
-                    lineNumber = int.Parse(splittedLine[1]),
-                    role = splittedLine[2],
-                    dialogue = splittedLine[3]
+                    dialogueNumber = int.Parse(splittedLine[1]),
+                    lineNumber = int.Parse(splittedLine[2]),
+                    receptor = splittedLine[3],
+                    role = splittedLine[4],
+                    text = splittedLine[5]
                 });
-                Debug.Log(dialogueList[^1]);
             }
         }
     }
@@ -62,12 +73,52 @@ public class ReadDataCVS : MonoBehaviour
     {
         return dialogueList;
     }
+
+    void InitDialogues()
+    {
+        List<DialogueLine> dialogueLines;
+        dialogueLines = GetDialogueLines();
+        foreach (DialogueLine line in dialogueLines)
+        {
+            if (!CompruebaSiYaExiste(line))
+            {
+                activeDialogues.Add(new DialoguePair()
+                {
+                    receptor = line.receptor,
+                    dialogueNumber = 0
+                });
+            }
+        }
+    }
+
+    bool CompruebaSiYaExiste(DialogueLine line)
+    {
+        foreach (DialoguePair dp in activeDialogues)
+        {
+            if (dp.receptor == line.receptor)
+            { return true; }
+        }
+        return false;
+    }
+
+    public List<DialoguePair> GetActiveDialogeLine()
+    {
+        return activeDialogues;
+    }
 }
 
 public struct DialogueLine
 {
     public string title;
+    public int dialogueNumber;
     public int lineNumber;
+    public string receptor;
     public string role;
-    public string dialogue;
+    public string text;
+}
+
+public struct DialoguePair
+{
+    public string receptor;
+    public int dialogueNumber;
 }

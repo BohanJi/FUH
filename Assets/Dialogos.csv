@@ -1,10 +1,27 @@
-Dialog Title;Dialog Line Number;Role;Raw Spanish Text
-Inicio;0;Barry;a
-Inicio;1;Miranda;b
-Inicio;2;Barry;c
-Inicio;3;Sistema;d
-Inicio;4;Miranda;e
-Inicio;5;Barry;f
-Inicio;6;Sistema;g
-Inicio;7;Miranda;h
-Inicio;8;Barry;i
+Dialog Title;Dialog Number;Dialog Line Number;Receptor;Role;Raw Spanish Text;
+Inicio;0;0;Miranda;Barry;a;
+Inicio;0;1;Miranda;Miranda;b;
+Inicio;0;2;Miranda;Barry;c;
+Inicio;0;3;Miranda;Sistema;d;
+Inicio;0;4;Miranda;Miranda;e;
+Inicio;0;5;Miranda;Barry;f;
+Inicio;0;6;Miranda;Sistema;g;
+Inicio;0;7;Miranda;Miranda;h;
+Inicio;0;8;Miranda;Barry;i;
+Chatarero;0;0;Chatarero;Barry;aaaaaaaaaaaaaaa;
+Chatarero;0;1;Chatarero;Barry;bbbbbbbbbbbbbbbbbbbbbbb;
+Chatarero;0;2;Chatarero;Chatarero;cccccccccccccccccccccccccccccccccc;
+Chatarero;0;3;Chatarero;Chatarero;ddddddddddddd;
+Chatarero;0;4;Chatarero;Chatarero;eeeeeeeeeeeeeeeeeeee;
+Chatarero;0;5;Chatarero;Barry;fffffffffffffffffff;
+Chatarero;0;6;Chatarero;Barry;ggggggggggg;
+Chatarero;0;7;Chatarero;Chatarero;hhhhhhhhhhhhhhhhh;
+Chatarero;0;8;Chatarero;Chatarero;iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii;
+Ch2;1;0;Chatarero;Chatarero;qqqqqqqqqqqqqqqqqqqqqq;
+Ch3;1;1;Chatarero;Chatarero;wwwwwwwwwwwwww;
+Ch4;1;2;Chatarero;Barry;eeeeeeeeeeeeeeeeeeee;
+Ch5;1;3;Chatarero;Barry;rrrrrrrrrrrrr;
+Ch6;1;4;Chatarero;Barry;ttttttttttttttttttttttttttttttt;
+Ch7;1;5;Chatarero;Chatarero;yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy;
+Ch8;1;6;Chatarero;Barry;uuuuu;
+Ch9;1;7;Chatarero;Chatarero;mmmmmmmmmmmmmmmm;

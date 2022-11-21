@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff16ed5a9610db74a9a3769247a67bc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: 
+  itemName: pala
 --- !u!70 &-8628044634079898164
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

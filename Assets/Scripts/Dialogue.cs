@@ -2,22 +2,40 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using System.Collections;
+using System;
+using Unity.VisualScripting;
 
 public class Dialogue : MonoBehaviour
 {
+    [SerializeField] string characterName;
+    
+    [Space]
+    [Header("Dialogue")]
     [SerializeField] GameObject dialogueMask;
     [SerializeField] GameObject dialoguePanel;
     [SerializeField] private TMP_Text dialogueText;
-    [SerializeField, TextArea(4,6)] string[] dialogueLines; 
     
-    private bool isPlayerInRange;
-    private bool didDialogueStart;
-    private int lineIndex;
-    private float typingTime = 0.05f;
+    [Space]
+    [SerializeField, Range(0f, 0.1f)] float typingTime;
+    
+
+    [SerializeField] ReadDataCVS rd;
+    [SerializeField] PlayerController player;
+    
+    List<DialogueLine> dialogueLines;
+
+    bool isPlayerInRange;
+    bool didDialogueStart;
+    int lineIndex;
+    int dialogueNumber;
+    int firstDialogueLineNumber;
 
     // Start is called before the first frame update
     void Start()
     {
+        dialogueLines = rd.GetDialogueLines();
+
+        GetFirstDialogueLine();
     }
 
     // Update is called once per frame
@@ -29,14 +47,14 @@ public class Dialogue : MonoBehaviour
             {
                 StartDialogue();
             }
-            else if (dialogueText.text == dialogueLines[lineIndex])
+            else if (dialogueText.text == dialogueLines[firstDialogueLineNumber + lineIndex].text)
             {
                 NextDialogueLine();
             }
             else
             {
                 StopAllCoroutines();
-                dialogueText.text = dialogueLines[lineIndex];
+                dialogueText.text = dialogueLines[firstDialogueLineNumber + lineIndex].text;
             }
         }
     }
@@ -54,7 +72,7 @@ public class Dialogue : MonoBehaviour
     private void NextDialogueLine()
     {
         lineIndex++;
-        if (lineIndex < dialogueLines.Length)
+        if (lineIndex < dialogueLines[firstDialogueLineNumber + lineIndex + 1].lineNumber)
         {
             StartCoroutine(ShowLine());
         }
@@ -70,7 +88,7 @@ public class Dialogue : MonoBehaviour
     {
         dialogueText.text = string.Empty;
 
-        foreach(char ch in dialogueLines[lineIndex])
+        foreach(char ch in dialogueLines[firstDialogueLineNumber + lineIndex].text)
         {
             dialogueText.text += ch;
             yield return new WaitForSecondsRealtime(typingTime);
@@ -83,6 +101,32 @@ public class Dialogue : MonoBehaviour
         {
             isPlayerInRange = true;
             dialogueMask.SetActive(true);
+        }
+    }
+
+    private void GetFirstDialogueLine()
+    {
+        int i = 0;
+        bool seguir = true;
+
+        List<DialoguePair> ldp = rd.GetActiveDialogeLine();
+
+        while (i < dialogueLines.Count && seguir)
+        {
+            if (dialogueLines[i].receptor == characterName)
+            {
+                foreach (DialoguePair pair in ldp)
+                {
+                    if (pair.receptor == characterName)
+                    {
+                        dialogueNumber = pair.dialogueNumber;
+                        firstDialogueLineNumber = i;
+                        seguir = false;
+                        break;
+                    }
+                }
+            }
+            i++;
         }
     }
 
