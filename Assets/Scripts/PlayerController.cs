@@ -3,19 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(Animator))]
 public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 5f;
 
     List<string> ActivesItems = new();
     Rigidbody2D rigidbody2d;
-    public Animator animator;
+    Animator animator;
 
     Vector2 movement;
 
     void Start()
     {
         DontDestroyOnLoad(this);
+        animator= GetComponent<Animator>();
         rigidbody2d = GetComponent<Rigidbody2D>();
     }
 
@@ -26,7 +28,7 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        rigidbody2d.MovePosition(rigidbody2d.position + movement * moveSpeed * Time.fixedDeltaTime);
+        rigidbody2d.MovePosition(rigidbody2d.position + moveSpeed * Time.fixedDeltaTime * movement);
     }
 
     void CharacterMove()

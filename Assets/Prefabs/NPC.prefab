@@ -98,7 +98,7 @@ GameObject:
   - component: {fileID: 9164774452780300503}
   - component: {fileID: 2818139701130689956}
   m_Layer: 8
-  m_Name: Miranda
+  m_Name: NPC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
