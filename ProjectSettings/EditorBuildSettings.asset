@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/bosque.unity
     guid: dd91288efef67e849a42cfce58b38d2e
+  - enabled: 1
+    path: Assets/Scenes/bosque1_2.unity
+    guid: 321e86f9859e6be4ca534123b5e97853
   m_configObjects: {}

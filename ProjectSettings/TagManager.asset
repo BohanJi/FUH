@@ -6,6 +6,7 @@ TagManager:
   tags:
   - NextScene
   - PreviousScene
+  - palanca
   layers:
   - Default
   - TransparentFX
