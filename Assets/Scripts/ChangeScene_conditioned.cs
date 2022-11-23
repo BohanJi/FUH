@@ -15,12 +15,9 @@ public class ChangeScene_conditioned : MonoBehaviour
         if (collision.gameObject.CompareTag("Player")){
             if (interaction != 0)
             {
-                if (collision.gameObject.CompareTag("Player"))
+                if (targetObject.activeInHierarchy == false)
                 {
-                    if (targetObject.activeInHierarchy == false)
-                    {
-                        SceneManager.LoadScene(scene);
-                    }
+                    SceneManager.LoadScene(scene);
                 }
             }
         }
