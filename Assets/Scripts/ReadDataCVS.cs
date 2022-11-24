@@ -105,6 +105,30 @@ public class ReadDataCVS : MonoBehaviour
     {
         return activeDialogues;
     }
+
+    public bool NextDialogueNumber(string characterName)
+    {
+        for(int i = 0; i < activeDialogues.Count; i++) 
+        {
+            if (activeDialogues[i].receptor == characterName)
+            {
+                foreach(DialogueLine line in dialogueList)
+                {
+                    DialoguePair nextDialogueNumber;
+                    nextDialogueNumber.dialogueNumber = activeDialogues[i].dialogueNumber + 1;
+                    nextDialogueNumber.receptor = activeDialogues[i].receptor;
+                    if (line.dialogueNumber == nextDialogueNumber.dialogueNumber 
+                        && line.receptor == nextDialogueNumber.receptor)
+                    {
+                        Debug.Log(line.dialogueNumber);
+                        activeDialogues[i] = nextDialogueNumber;
+                        return true;
+                    }
+                }
+            }
+        }
+        return false;
+    }
 }
 
 public struct DialogueLine

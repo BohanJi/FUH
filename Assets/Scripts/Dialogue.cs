@@ -34,8 +34,6 @@ public class Dialogue : MonoBehaviour
     void Start()
     {
         dialogueLines = rd.GetDialogueLines();
-
-        GetFirstDialogueLine();
     }
 
     // Update is called once per frame
@@ -72,7 +70,8 @@ public class Dialogue : MonoBehaviour
     private void NextDialogueLine()
     {
         lineIndex++;
-        if (lineIndex < dialogueLines[firstDialogueLineNumber + lineIndex + 1].lineNumber)
+        if (firstDialogueLineNumber + lineIndex + 1 < dialogueLines.Count 
+            && lineIndex < dialogueLines[firstDialogueLineNumber + lineIndex + 1].lineNumber)
         {
             StartCoroutine(ShowLine());
         }
@@ -99,6 +98,7 @@ public class Dialogue : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            GetFirstDialogueLine();
             isPlayerInRange = true;
             dialogueMask.SetActive(true);
         }
@@ -117,7 +117,7 @@ public class Dialogue : MonoBehaviour
             {
                 foreach (DialoguePair pair in ldp)
                 {
-                    if (pair.receptor == characterName)
+                    if (pair.receptor == characterName && pair.dialogueNumber == dialogueLines[i].dialogueNumber)
                     {
                         dialogueNumber = pair.dialogueNumber;
                         firstDialogueLineNumber = i;
@@ -136,6 +136,8 @@ public class Dialogue : MonoBehaviour
         {
             isPlayerInRange = false;
             dialogueMask.SetActive(false);
+
+            rd.NextDialogueNumber(characterName);
         }
     }
 }
