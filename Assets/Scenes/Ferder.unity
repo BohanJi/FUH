@@ -435,7 +435,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -5084420083155382724, guid: e8753cc6417422b4995a4fb9ae87ead1, type: 3}
       propertyPath: itemName
-      value: 
+      value: pala
       objectReference: {fileID: 0}
     - target: {fileID: 2322512163137131507, guid: e8753cc6417422b4995a4fb9ae87ead1, type: 3}
       propertyPath: m_Name
