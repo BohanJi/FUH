@@ -1,5 +1,12 @@
-Dialog Title;Dialog Number;Dialog Line Number;Receptor;Role;Raw Spanish Text;
-Inicio;0;0;Miranda;Barry;a;
+﻿Dialog Title;Dialog Number;Dialog Line Number;Receptor;Role;Raw Spanish Text;
+Tutorial_1;0;0;InfoBot;InfoBot;¡Hola! Bienvenidx al tutorial rápido!;
+Tutorial_2;0;1;InfoBot;InfoBot;¡Empieza moviendote con WASD y cruza este camino esquivando las rocas!;
+Tutorial_3;0;2;InfoBot;InfoBot;¡Nos vemos al otro lado!;
+Tutorial_4;0;0;InfoBot_2;InfoBot;¡Muy bien, veo que te sabes mover!;
+Tutorial_5;0;1;InfoBot_2;InfoBot;¡Te voy a dar una hoz para que puedas abrirte paso por el siguiente camino!;
+Tutorial_6;0;2;InfoBot_2;InfoBot;"¡Recuerda pulsar la tecla ""E"" cuando estés cerca de un arbusto!";
+Tutorial_7;0;3;InfoBot_2;InfoBot;Si lo consigues, llegarás al poblado, ¡buena suerte!;
+Inicio;0;1;Miranda;Miranda;b;
 Inicio;0;1;Miranda;Miranda;b;
 Inicio;0;2;Miranda;Barry;c;
 Inicio;0;3;Miranda;Sistema;d;

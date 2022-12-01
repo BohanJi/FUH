@@ -69,7 +69,7 @@ public class ReadDataCVS : MonoBehaviour
         }
     }
 
-    public List<DialogueLine> GetDialogueLines() 
+    public List<DialogueLine> GetDialogueLines()
     {
         return dialogueList;
     }
@@ -108,7 +108,7 @@ public class ReadDataCVS : MonoBehaviour
 
     public bool NextDialogueNumber(string characterName)
     {
-        for(int i = 0; i < activeDialogues.Count; i++) 
+        for(int i = 0; i < activeDialogues.Count; i++)
         {
             if (activeDialogues[i].receptor == characterName)
             {
@@ -117,7 +117,7 @@ public class ReadDataCVS : MonoBehaviour
                     DialoguePair nextDialogueNumber;
                     nextDialogueNumber.dialogueNumber = activeDialogues[i].dialogueNumber + 1;
                     nextDialogueNumber.receptor = activeDialogues[i].receptor;
-                    if (line.dialogueNumber == nextDialogueNumber.dialogueNumber 
+                    if (line.dialogueNumber == nextDialogueNumber.dialogueNumber
                         && line.receptor == nextDialogueNumber.receptor)
                     {
                         Debug.Log(line.dialogueNumber);
