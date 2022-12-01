@@ -70,7 +70,7 @@ public class Dialogue : MonoBehaviour
     private void NextDialogueLine()
     {
         lineIndex++;
-        if (firstDialogueLineNumber + lineIndex < dialogueLines.Count 
+        if (firstDialogueLineNumber + lineIndex < dialogueLines.Count
             && lineIndex < dialogueLines[firstDialogueLineNumber + lineIndex].lineNumber)
         {
             StartCoroutine(ShowLine());

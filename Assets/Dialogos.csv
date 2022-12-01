@@ -1,27 +1,8 @@
-Dialog Title;Dialog Number;Dialog Line Number;Receptor;Role;Raw Spanish Text;
-Inicio;0;0;Miranda;Barry;a;
-Inicio;0;1;Miranda;Miranda;b;
-Inicio;0;2;Miranda;Barry;c;
-Inicio;0;3;Miranda;Sistema;d;
-Inicio;0;4;Miranda;Miranda;e;
-Inicio;0;5;Miranda;Barry;f;
-Inicio;0;6;Miranda;Sistema;g;
-Inicio;0;7;Miranda;Miranda;h;
-Inicio;0;8;Miranda;Barry;i;
-Chatarero;0;0;Chatarero;Barry;aaaaaaaaaaaaaaa;
-Chatarero;0;1;Chatarero;Barry;bbbbbbbbbbbbbbbbbbbbbbb;
-Chatarero;0;2;Chatarero;Chatarero;cccccccccccccccccccccccccccccccccc;
-Chatarero;0;3;Chatarero;Chatarero;ddddddddddddd;
-Chatarero;0;4;Chatarero;Chatarero;eeeeeeeeeeeeeeeeeeee;
-Chatarero;0;5;Chatarero;Barry;fffffffffffffffffff;
-Chatarero;0;6;Chatarero;Barry;ggggggggggg;
-Chatarero;0;7;Chatarero;Chatarero;hhhhhhhhhhhhhhhhh;
-Chatarero;0;8;Chatarero;Chatarero;iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii;
-Ch2;1;0;Chatarero;Chatarero;qqqqqqqqqqqqqqqqqqqqqq;
-Ch3;1;1;Chatarero;Chatarero;wwwwwwwwwwwwww;
-Ch4;1;2;Chatarero;Barry;eeeeeeeeeeeeeeeeeeee;
-Ch5;1;3;Chatarero;Barry;rrrrrrrrrrrrr;
-Ch6;1;4;Chatarero;Barry;ttttttttttttttttttttttttttttttt;
-Ch7;1;5;Chatarero;Chatarero;yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy;
-Ch8;1;6;Chatarero;Barry;uuuuu;
-Ch9;1;7;Chatarero;Chatarero;mmmmmmmmmmmmmmmm;
+Dialog Title;Dialog Number;Dialog Line Number;Receptor;Role;Raw Spanish Text
+Tutorial_1;0;1;Barry;InfoBot;Hola! Bienvenidx al tutorial rapido!
+Tutorial_2;0;2;Barry;InfoBot;Empieza moviendote con WASD y cruza este camino esquivando las rocas!
+Tutorial_3;0;3;Barry;InfoBot;Nos vemos al otro lado!
+Tutorial_4;1;1;Barry;InfoBot_2;Muy bien, veo que te sabes mover!
+Tutorial_5;1;2;Barry;InfoBot_2;Te voy a dar una hoz para que puedas abrirte paso por el siguiente camino!
+Tutorial_6;1;3;Barry;InfoBot_2;Recuerda pulsar la tecla 'E' cuando estes cerca de un arbusto!
+Tutorial_7;1;4;Barry;InfoBot_2;Si lo consigues, llegaras al poblado, buena suerte!
