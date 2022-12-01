@@ -304,4 +304,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8bf0ccefd41a534592307f2141ae73f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: bosque
+  scene: Bosque
