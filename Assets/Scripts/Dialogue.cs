@@ -20,7 +20,6 @@ public class Dialogue : MonoBehaviour
     
 
     [SerializeField] ReadDataCVS rd;
-    [SerializeField] PlayerController player;
     
     List<DialogueLine> dialogueLines;
 

@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         DontDestroyOnLoad(this);
-        animator= GetComponent<Animator>();
+        animator = GetComponent<Animator>();
         rigidbody2d = GetComponent<Rigidbody2D>();
     }
 
@@ -49,5 +49,10 @@ public class PlayerController : MonoBehaviour
     public List<string> GetItemList()
     {
         return ActivesItems;
+    }
+
+    public Vector2 GetPosition()
+    {
+        return rigidbody2d.position;
     }
 }
