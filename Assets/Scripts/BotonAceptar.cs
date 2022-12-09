@@ -37,6 +37,9 @@ public class BotonAceptar : MonoBehaviour
             objetActivable2.SetActive(false);
             objetActivable3.SetActive(false);
             objetActivable4.SetActive(false);
+
+            objetActivable4.transform.position=new Vector2(435f,80f);
+
         }
         
     } 
