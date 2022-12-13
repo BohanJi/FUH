@@ -28,6 +28,7 @@ public class Dialogue : MonoBehaviour
     int lineIndex;
     int dialogueNumber;
     int firstDialogueLineNumber;
+    bool interactuable = true;
 
     // Start is called before the first frame update
     void Start()
@@ -39,7 +40,7 @@ public class Dialogue : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(isPlayerInRange && Input.GetButtonDown("Interaction"))
+        if(interactuable && isPlayerInRange && Input.GetButtonDown("Interaction"))
         {
             if (!didDialogueStart)
             {
@@ -96,7 +97,7 @@ public class Dialogue : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (interactuable && collision.gameObject.CompareTag("Player"))
         {
             GetFirstDialogueLine();
             isPlayerInRange = true;
@@ -140,4 +141,11 @@ public class Dialogue : MonoBehaviour
             rd.NextDialogueNumber(characterName);
         }
     }
+
+    public void SetInteracuable(bool i)
+    {
+        interactuable = i;
+    }
+
+    public bool IsInteracuable() { return interactuable; }
 }

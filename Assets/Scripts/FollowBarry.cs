@@ -17,6 +17,8 @@ public class FollowBarry : MonoBehaviour
         rBody= GetComponent<Rigidbody2D>();
         barry = FindObjectOfType<PlayerController>();
         empezar = true;
+
+        GetComponent<Dialogue>().SetInteracuable(false);
     }
 
     // Update is called once per frame
