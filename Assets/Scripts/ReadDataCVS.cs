@@ -20,7 +20,6 @@ public class ReadDataCVS : MonoBehaviour
 
     void Awake()
     {
-        DontDestroyOnLoad(this);
         ReadFileData();
         ExtractData();
         InitDialogues();

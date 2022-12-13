@@ -17,6 +17,15 @@ public class ChangeScene : MonoBehaviour
         {
             timeCount = 0;
         }
+        else
+        {
+            try
+            {
+                PlayerController pl = FindObjectOfType<PlayerController>();
+                pl.ResetPos();
+            }
+            catch { }
+        }
     }
 
     // Update is called once per frame

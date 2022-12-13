@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
         DontDestroyOnLoad(this);
         animator = GetComponent<Animator>();
         rigidbody2d = GetComponent<Rigidbody2D>();
+        ResetPos();
     }
 
     void Update()
@@ -54,5 +55,11 @@ public class PlayerController : MonoBehaviour
     public Vector2 GetPosition()
     {
         return rigidbody2d.position;
+    }
+
+    public void ResetPos()
+    {
+        SpownPoint sp = FindObjectOfType<SpownPoint>();
+        rigidbody2d.position = sp.GetComponent<Rigidbody2D>().position;
     }
 }

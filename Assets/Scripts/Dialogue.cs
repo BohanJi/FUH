@@ -19,7 +19,7 @@ public class Dialogue : MonoBehaviour
     [SerializeField, Range(0f, 0.1f)] float typingTime;
     
 
-    [SerializeField] ReadDataCVS rd;
+    ReadDataCVS rd;
     
     List<DialogueLine> dialogueLines;
 
@@ -32,6 +32,7 @@ public class Dialogue : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        rd = FindObjectOfType<ReadDataCVS>();
         dialogueLines = rd.GetDialogueLines();
     }
 
