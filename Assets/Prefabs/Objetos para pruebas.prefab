@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6846556271003247585}
   m_Layer: 0
-  m_Name: Objetos a eliminar
+  m_Name: Objetos para pruebas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
