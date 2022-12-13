@@ -241,7 +241,7 @@ PrefabInstance:
     - target: {fileID: 1016018735926098573, guid: c62117c7c3439934c8e833847368d071, type: 3}
       propertyPath: dialogueMask
       value: 
-      objectReference: {fileID: 1745548359}
+      objectReference: {fileID: 738831190}
     - target: {fileID: 1016018735926098573, guid: c62117c7c3439934c8e833847368d071, type: 3}
       propertyPath: dialogueText
       value: 
@@ -28080,11 +28080,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 884a446be8bf3b3448faaa24277b0d64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &726404670 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1412814834, guid: c62117c7c3439934c8e833847368d071, type: 3}
-  m_PrefabInstance: {fileID: 1882544086}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &726475279
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28142,6 +28137,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 400d21dbff1e8c74ab98d054dd0f6274, type: 3}
+--- !u!1 &738831190 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4314073304801179687, guid: c62117c7c3439934c8e833847368d071, type: 3}
+  m_PrefabInstance: {fileID: 5982955}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &794343332 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7908832893461204374, guid: 8fc7cc726b082e544b62b91b2cf59171, type: 3}
@@ -38296,15 +38296,15 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &1745548359 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1412814834, guid: c62117c7c3439934c8e833847368d071, type: 3}
-  m_PrefabInstance: {fileID: 5982955}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1757071727 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8254136733549013170, guid: 400d21dbff1e8c74ab98d054dd0f6274, type: 3}
   m_PrefabInstance: {fileID: 726475279}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1842153303 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4314073304801179687, guid: c62117c7c3439934c8e833847368d071, type: 3}
+  m_PrefabInstance: {fileID: 1882544086}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1854004210
 GameObject:
@@ -38473,7 +38473,7 @@ PrefabInstance:
     - target: {fileID: 1016018735926098573, guid: c62117c7c3439934c8e833847368d071, type: 3}
       propertyPath: dialogueMask
       value: 
-      objectReference: {fileID: 726404670}
+      objectReference: {fileID: 1842153303}
     - target: {fileID: 1016018735926098573, guid: c62117c7c3439934c8e833847368d071, type: 3}
       propertyPath: dialogueText
       value: 

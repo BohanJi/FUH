@@ -46874,11 +46874,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.9329278, y: 1.8465292}
   m_EdgeRadius: 0
---- !u!1 &1412814834 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1412814834, guid: c62117c7c3439934c8e833847368d071, type: 3}
-  m_PrefabInstance: {fileID: 1016018735669710011}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1498766444
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46970,11 +46965,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chatarero
       objectReference: {fileID: 0}
+    - target: {fileID: 4314073304801179687, guid: c62117c7c3439934c8e833847368d071, type: 3}
+      propertyPath: m_Name
+      value: ChatareroDialogueMask
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c62117c7c3439934c8e833847368d071, type: 3}
 --- !u!1 &1498766445 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 1412814834, guid: c62117c7c3439934c8e833847368d071, type: 3}
+  m_CorrespondingSourceObject: {fileID: 4314073304801179687, guid: c62117c7c3439934c8e833847368d071, type: 3}
   m_PrefabInstance: {fileID: 1498766444}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1514672091
@@ -47179,6 +47178,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brenda
       objectReference: {fileID: 0}
+    - target: {fileID: 4314073304801179687, guid: c62117c7c3439934c8e833847368d071, type: 3}
+      propertyPath: m_Name
+      value: BrendaDialogueMask
+      objectReference: {fileID: 0}
     - target: {fileID: 9164774452780300503, guid: c62117c7c3439934c8e833847368d071, type: 3}
       propertyPath: m_IsTrigger
       value: 1
@@ -47187,7 +47190,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: c62117c7c3439934c8e833847368d071, type: 3}
 --- !u!1 &1662442754 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 1412814834, guid: c62117c7c3439934c8e833847368d071, type: 3}
+  m_CorrespondingSourceObject: {fileID: 4314073304801179687, guid: c62117c7c3439934c8e833847368d071, type: 3}
   m_PrefabInstance: {fileID: 1662442753}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1737892752
@@ -47583,6 +47586,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1016018735926098572, guid: c62117c7c3439934c8e833847368d071, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 3b19c9ea24627c044a330b0f6bfa7769, type: 3}
     - target: {fileID: 1016018735926098573, guid: c62117c7c3439934c8e833847368d071, type: 3}
       propertyPath: rd
       value: 
@@ -47602,7 +47609,7 @@ PrefabInstance:
     - target: {fileID: 1016018735926098573, guid: c62117c7c3439934c8e833847368d071, type: 3}
       propertyPath: dialogueMask
       value: 
-      objectReference: {fileID: 1412814834}
+      objectReference: {fileID: 1016018735669710012}
     - target: {fileID: 1016018735926098573, guid: c62117c7c3439934c8e833847368d071, type: 3}
       propertyPath: dialogueText
       value: 
@@ -47643,8 +47650,37 @@ PrefabInstance:
       propertyPath: m_Name
       value: Miranda
       objectReference: {fileID: 0}
+    - target: {fileID: 2818139701130689956, guid: c62117c7c3439934c8e833847368d071, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 2818139701130689956, guid: c62117c7c3439934c8e833847368d071, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 2.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 4314073304801179687, guid: c62117c7c3439934c8e833847368d071, type: 3}
+      propertyPath: m_Name
+      value: MirandaDialogueMask
+      objectReference: {fileID: 0}
+    - target: {fileID: 4314073304801179687, guid: c62117c7c3439934c8e833847368d071, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164774452780300503, guid: c62117c7c3439934c8e833847368d071, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164774452780300503, guid: c62117c7c3439934c8e833847368d071, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 2.72
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c62117c7c3439934c8e833847368d071, type: 3}
+--- !u!1 &1016018735669710012 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4314073304801179687, guid: c62117c7c3439934c8e833847368d071, type: 3}
+  m_PrefabInstance: {fileID: 1016018735669710011}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4057759718322319465
 PrefabInstance:
   m_ObjectHideFlags: 0
