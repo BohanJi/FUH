@@ -5,48 +5,45 @@ using UnityEngine.SceneManagement;
 
 public class ChangeScene : MonoBehaviour
 {
-    public string scene;
+	[SerializeField] string scene;
 
-    private float timeCount;
-    const int timeLimit = 5;
-    // Start is called before the first frame update
+    [SerializeField] float transitionTime = 1f;
+
+    private Animator transitionAnimator;
+
     void Start()
     {
-        if (scene != "Transition")
+        transitionAnimator = GetComponentInChildren<Animator>();
+        try
         {
-            timeCount = 0;
+            PlayerController pl = FindObjectOfType<PlayerController>();
+            pl.ResetPos();
         }
-        else
-        {
-            try
+        catch { }
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        float interaction = Input.GetAxis("Interaction");
+
+        if (collision.gameObject.CompareTag("Player")){
+            if (interaction != 0)
             {
-                PlayerController pl = FindObjectOfType<PlayerController>();
-                pl.ResetPos();
+                if (gameObject.activeInHierarchy)
+                {
+                    StartCoroutine(SceneLoad());
+                }
             }
-            catch { }
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    public IEnumerator SceneLoad()
     {
-        if (scene != "Transition")
-        {
-            timeCount += Time.deltaTime;
-            if (timeCount > timeLimit) LoadScene(scene);
-        }
+        transitionAnimator.SetTrigger("StartTransition");
+
+        yield return new WaitForSeconds(transitionTime);
+
+        SceneManager.LoadScene(scene);
     }
 
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.CompareTag("Player"))
-        {
-            LoadScene(scene);
-        }
-    }
-
-    private void LoadScene(string sceneName)
-    {
-        SceneManager.LoadScene(sceneName);
-    }
 }
