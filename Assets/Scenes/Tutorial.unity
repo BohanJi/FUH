@@ -28691,6 +28691,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spown
       objectReference: {fileID: 0}
+    - target: {fileID: 8610523294582230787, guid: 3c186f8c0da7ba542bf4ed0bbccf83f2, type: 3}
+      propertyPath: m_SortingLayer
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8610523294582230787, guid: 3c186f8c0da7ba542bf4ed0bbccf83f2, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8610523294582230787, guid: 3c186f8c0da7ba542bf4ed0bbccf83f2, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1280068783
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c186f8c0da7ba542bf4ed0bbccf83f2, type: 3}
 --- !u!1 &1661841172
