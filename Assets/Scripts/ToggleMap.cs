@@ -4,9 +4,16 @@ using UnityEngine;
 
 public class ToggleMap : MonoBehaviour
 {
-    public Transform playerPos;
-    public Transform offscreenPos;
+    Transform playerPos;
+    Transform offscreenPos;
     public float showSpeed;
+
+    void Start()
+    {
+        PlayerController p = FindObjectOfType<PlayerController>();
+        playerPos = p.GetComponent<Transform>();
+        offscreenPos = p.GetComponentsInChildren<Transform>()[1];
+    }
 
     void Update()
     {

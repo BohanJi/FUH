@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
 
     Vector2 movement;
 
-    void Start()
+    void Awake()
     {
         DontDestroyOnLoad(this);
         animator = GetComponent<Animator>();
