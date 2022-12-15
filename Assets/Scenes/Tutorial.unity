@@ -28327,7 +28327,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -8988958704346515432, guid: c0b166ee1aedcdc4aacd4f7c2f5f7794, type: 3}
+    - target: {fileID: -2188820844447038614, guid: c0b166ee1aedcdc4aacd4f7c2f5f7794, type: 3}
+      propertyPath: scene
+      value: Ferder
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: scene
       value: Ferder
       objectReference: {fileID: 0}
@@ -28338,6 +28342,14 @@ PrefabInstance:
     - target: {fileID: 4940803661611640114, guid: c0b166ee1aedcdc4aacd4f7c2f5f7794, type: 3}
       propertyPath: m_Size.y
       value: 2.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4940803661611640114, guid: c0b166ee1aedcdc4aacd4f7c2f5f7794, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4940803661611640114, guid: c0b166ee1aedcdc4aacd4f7c2f5f7794, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7328901118737245827, guid: c0b166ee1aedcdc4aacd4f7c2f5f7794, type: 3}
       propertyPath: m_Sprite

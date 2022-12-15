@@ -111,7 +111,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8003491709667928780}
   - component: {fileID: 7328901118737245827}
-  - component: {fileID: -8988958704346515432}
+  - component: {fileID: -2188820844447038614}
   - component: {fileID: 4940803661611640114}
   m_Layer: 10
   m_Name: Transition
@@ -188,7 +188,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &-8988958704346515432
+--- !u!114 &-2188820844447038614
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -197,10 +197,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2307739047139599198}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8bf0ccefd41a534592307f2141ae73f, type: 3}
+  m_Script: {fileID: 11500000, guid: 9d7377261084eb64eb118572a0d06bac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: Ferder
+  scene: 
   transitionTime: 1
 --- !u!61 &4940803661611640114
 BoxCollider2D:

@@ -46515,6 +46515,10 @@ PrefabInstance:
       propertyPath: scene
       value: bosque
       objectReference: {fileID: 0}
+    - target: {fileID: -2188820844447038614, guid: c0b166ee1aedcdc4aacd4f7c2f5f7794, type: 3}
+      propertyPath: scene
+      value: bosque
+      objectReference: {fileID: 0}
     - target: {fileID: 2307739047139599198, guid: c0b166ee1aedcdc4aacd4f7c2f5f7794, type: 3}
       propertyPath: m_Name
       value: Transition
