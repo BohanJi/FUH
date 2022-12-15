@@ -23,7 +23,7 @@ public class PlayerStuck : MonoBehaviour
         }
         else
         {
-            BarryIcon.speed = 1.175f;
+            BarryIcon.speed = 1.05f;
         }
     }
 }
