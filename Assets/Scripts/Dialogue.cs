@@ -29,6 +29,7 @@ public class Dialogue : MonoBehaviour
     int dialogueNumber;
     int firstDialogueLineNumber;
     bool interactuable = true;
+    public GameObject elemeto;
 
     // Start is called before the first frame update
     void Start()
@@ -45,6 +46,7 @@ public class Dialogue : MonoBehaviour
             if (!didDialogueStart)
             {
                 StartDialogue();
+
             }
             else if (dialogueText.text == dialogueLines[firstDialogueLineNumber + lineIndex].text)
             {
@@ -97,6 +99,22 @@ public class Dialogue : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (gameObject.name == "Miranda")
+        {
+            if (GameObject.FindGameObjectWithTag("miranda") == null)
+            {
+                rd.NextDialogueNumber(characterName);
+            }
+        }
+        if (gameObject.name == "Miranda")
+        {
+            elemeto.SetActive(true);
+        }
+        if (gameObject.name == "Chatarero" && GameObject.FindGameObjectWithTag("miranda") != null)
+        {
+            GameObject.FindGameObjectWithTag("miranda").SetActive(false);
+        }
+
         if (interactuable && collision.gameObject.CompareTag("Player"))
         {
             GetFirstDialogueLine();
@@ -136,9 +154,7 @@ public class Dialogue : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             isPlayerInRange = false;
-            dialogueMask.SetActive(false);
-
-            rd.NextDialogueNumber(characterName);
+            dialogueMask.SetActive(false);          
         }
     }
 

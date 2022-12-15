@@ -8,6 +8,8 @@ TagManager:
   - PreviousScene
   - palanca
   - item
+  - miranda
+  - chatarrero
   layers:
   - Default
   - TransparentFX
