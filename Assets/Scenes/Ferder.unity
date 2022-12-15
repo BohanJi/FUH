@@ -533,14 +533,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 254065248}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0.0023931912, w: 0.9999972}
   m_LocalPosition: {x: -16.201921, y: 0.21480104, z: 8.931794}
   m_LocalScale: {x: 1.8869431, y: 1.8869431, z: 1.8869431}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 542770506}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.274}
 --- !u!61 &254065251
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -778,8 +778,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1434332475
+  m_SortingLayer: 1
   m_SortingOrder: 200
   m_Sprite: {fileID: 21300000, guid: f3f0e948200d683438e15f866cd69f7f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -47068,6 +47068,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7964978497559888693, guid: 17faadc948b360b47971a04d371a6bcc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17faadc948b360b47971a04d371a6bcc, type: 3}
 --- !u!1001 &1373608214
@@ -47440,6 +47444,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1016018735926098573, guid: c62117c7c3439934c8e833847368d071, type: 3}
+      propertyPath: elemeto
+      value: 
+      objectReference: {fileID: 2064572794}
+    - target: {fileID: 1016018735926098573, guid: c62117c7c3439934c8e833847368d071, type: 3}
       propertyPath: typingTime
       value: 0.02
       objectReference: {fileID: 0}
@@ -47465,7 +47473,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1016018735926098574, guid: c62117c7c3439934c8e833847368d071, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1016018735926098574, guid: c62117c7c3439934c8e833847368d071, type: 3}
       propertyPath: m_TagString
@@ -47777,6 +47785,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 1016018735926098573, guid: c62117c7c3439934c8e833847368d071, type: 3}
+      propertyPath: elemeto
+      value: 
+      objectReference: {fileID: 2064572794}
     - target: {fileID: 1016018735926098573, guid: c62117c7c3439934c8e833847368d071, type: 3}
       propertyPath: typingTime
       value: 0.021
@@ -48159,6 +48171,18 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 3b19c9ea24627c044a330b0f6bfa7769, type: 3}
+    - target: {fileID: 1016018735926098572, guid: c62117c7c3439934c8e833847368d071, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1016018735926098572, guid: c62117c7c3439934c8e833847368d071, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1016018735926098572, guid: c62117c7c3439934c8e833847368d071, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1016018735926098573, guid: c62117c7c3439934c8e833847368d071, type: 3}
       propertyPath: rd
       value: 
@@ -48242,6 +48266,10 @@ PrefabInstance:
     - target: {fileID: 4314073304801179687, guid: c62117c7c3439934c8e833847368d071, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7696940110753983897, guid: c62117c7c3439934c8e833847368d071, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9164774452780300503, guid: c62117c7c3439934c8e833847368d071, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
