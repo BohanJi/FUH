@@ -13,8 +13,14 @@ GameObject:
   - component: {fileID: 2184078053640964255}
   - component: {fileID: 4766179922521726348}
   - component: {fileID: 8077283061051706206}
+<<<<<<< Updated upstream
   - component: {fileID: 7070134697664103746}
   m_Layer: 0
+=======
+  - component: {fileID: 656912126}
+  - component: {fileID: 5250333752819551242}
+  m_Layer: 8
+>>>>>>> Stashed changes
   m_Name: Barry
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -168,3 +174,15 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &5250333752819551242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 790148674424101010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56449a80092e569458e2e34acd7d1a19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
