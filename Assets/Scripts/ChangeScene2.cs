@@ -17,9 +17,9 @@ public class ChangeScene2 : MonoBehaviour
 
         PlayerController pl = FindObjectOfType<PlayerController>();
 
-        if (SceneManager.GetActiveScene().buildIndex < 3)
-            pl.gameObject.SetActive(true);
-        else pl.gameObject.SetActive(false);
+        if (SceneManager.GetActiveScene().name == "MinijuegoMapa" || SceneManager.GetActiveScene().name == "Minijuego2")
+            pl.gameObject.SetActive(false);
+        else pl.gameObject.SetActive(true);
         try
         {
             pl.ResetPos();
