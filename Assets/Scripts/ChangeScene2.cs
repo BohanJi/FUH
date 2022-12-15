@@ -14,9 +14,14 @@ public class ChangeScene2 : MonoBehaviour
     void Start()
     {
         transitionAnimator = GetComponentInChildren<Animator>();
+
+        PlayerController pl = FindObjectOfType<PlayerController>();
+
+        if (SceneManager.GetActiveScene().name == "MinijuegoMapa" || SceneManager.GetActiveScene().name == "Minijuego2")
+            pl.gameObject.SetActive(false);
+        else pl.gameObject.SetActive(true);
         try
         {
-            PlayerController pl = FindObjectOfType<PlayerController>();
             pl.ResetPos();
         }
         catch { }

@@ -1306,7 +1306,7 @@ MonoBehaviour:
   objetActivable4: {fileID: 1692968606}
   info: {fileID: 1692968608}
   i: {fileID: 0}
-  tiempoMaximo: 3
+  tiempoMaximo: 30
   slider: {fileID: 800074527}
   tiempoActivo: 0
 --- !u!4 &1402504740

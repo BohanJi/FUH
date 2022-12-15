@@ -20,6 +20,7 @@ public class ReadDataCVS : MonoBehaviour
 
     void Awake()
     {
+        if (GameObject.FindObjectsOfType<PlayerController>().Length > 1) Destroy(gameObject);
         ReadFileData();
         ExtractData();
         InitDialogues();
