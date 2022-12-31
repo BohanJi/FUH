@@ -1,27 +1,49 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.UI;
+using TMPro;
 
 public class Puzzle : MonoBehaviour
 {
     public NumberBox boxPrefab;
-    public NumberBox [,] boxes =new NumberBox[4,4];
+    public NumberBox [,] boxes =new NumberBox[3,3];
     public Sprite [] sprites;  
+
+    [SerializeField] private ControladorPuzzle controladorPuzzle; 
+    public GameObject objetActivable1;
+    public GameObject objetActivable2;
+    public GameObject objetActivable3;
+    public int ganador=0;
+
+    public TextMeshProUGUI info;
+    
+    public int inicio=0;
 
     void Start()
     {
-        Init();
-        for (int i = 0; i<100; i++){
-            Mezclar();
+       controladorPuzzle=FindObjectOfType<ControladorPuzzle>();
+    }
+
+    void Update()
+    {
+        if(controladorPuzzle.tiempoActivo && inicio==0){
+            Init();
+            inicio=1;
+            for (int i = 0; i<100; i++){
+                Mezclar();
+            }
         }
+        
         
     }
 
     public void Init(){
         int n=0;
-        for (int y = 3; y>=0; y--)
+        for (int y = 2; y>=0; y--)
         {
-            for (int x = 0; x<4; x++){
+            for (int x = 0; x<3; x++){
                 NumberBox box= Instantiate(boxPrefab, new Vector2(x,y),Quaternion.identity);
                 box.Init(x,y,n+1,sprites[n],ClickToSwap); 
                 boxes[x,y]=box;
@@ -35,11 +57,26 @@ public class Puzzle : MonoBehaviour
         int dx=getDx(x,y);
         int dy=getDy(x,y);
         Swap(x,y,dx,dy);
+        if(IsWin()==true){
+            for (int i = 0; i<3; i++)
+            {
+                for (int j = 0; j<3; j++){
+
+                    boxes[j,i].SeñalWin();
+                    
+                }
+            }
+            objetActivable1.SetActive(true);
+            objetActivable2.SetActive(true);
+            objetActivable3.SetActive(true);
+            controladorPuzzle.DesactivarTemporizador();
+            SetInfoText("Enhorabuena");
+        }
     }
 
     void Swap(int x,int y,int dx, int dy){
         
-
+        
         var from =boxes[x,y];
         var target=boxes[x+dx,y+dy];
 
@@ -56,7 +93,7 @@ public class Puzzle : MonoBehaviour
 
     int getDx(int x,int y){
         //libre derecha
-        if(x<3 && boxes[x+1,y].IsEmpty()){
+        if(x<2 && boxes[x+1,y].IsEmpty()){
             return 1;
         }
 
@@ -71,7 +108,7 @@ public class Puzzle : MonoBehaviour
     int getDy(int x,int y){
 
         //libre arriba
-        if(y<3 && boxes[x,y+1].IsEmpty()){
+        if(y<2 && boxes[x,y+1].IsEmpty()){
             return 1;
         }
 
@@ -85,9 +122,9 @@ public class Puzzle : MonoBehaviour
 
     void Mezclar(){
 
-        for (int i = 0; i<4; i++)
+        for (int i = 0; i<3; i++)
         {
-            for (int j = 0; j<4; j++){
+            for (int j = 0; j<3; j++){
 
                 if(boxes[i,j].IsEmpty()){
                     Vector2 pos=getValidMove(i,j);
@@ -95,6 +132,25 @@ public class Puzzle : MonoBehaviour
                 }
             }
         }
+    }
+
+    
+    public bool IsWin(){
+        bool ganador=true;
+        int cont=7;
+        for (int i = 0; i<3; i++)
+        {
+            for (int j = 0; j<3; j++){
+
+                if(boxes[j,i].index!=cont){
+                    Debug.Log("toco caja "+boxes[i,j].index + " xy "+i+j+" y cont "+ cont);
+                    return ganador=false;
+                }
+                cont++;
+            }
+            cont-=6;
+        }
+        return ganador;
     }
 
     private Vector2 lastMove;
@@ -118,10 +174,15 @@ public class Puzzle : MonoBehaviour
     }
     
     bool isValid(int n){
-        return n>=0 && n<=3;
+        return n>=0 && n<=2;
     } 
 
     bool isRepeatMove(Vector2 pos){
         return pos*-1==lastMove; 
     }
+    public void SetInfoText(string newInfo)
+	{        
+		info.text =newInfo.ToString();
+        
+	}
 }

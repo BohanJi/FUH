@@ -404,7 +404,7 @@ Camera:
   m_GameObject: {fileID: 389312137}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
+  m_ClearFlags: 4
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
@@ -910,7 +910,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -12.4, y: -5.5}
+  m_AnchoredPosition: {x: -12.400024, y: -5.5}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &800074527
@@ -1306,7 +1306,7 @@ MonoBehaviour:
   objetActivable4: {fileID: 1692968606}
   info: {fileID: 1692968608}
   i: {fileID: 0}
-  tiempoMaximo: 30
+  tiempoMaximo: 15
   slider: {fileID: 800074527}
   tiempoActivo: 0
 --- !u!4 &1402504740

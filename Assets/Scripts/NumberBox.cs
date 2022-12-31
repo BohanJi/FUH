@@ -6,8 +6,8 @@ using UnityEngine;
 public class NumberBox : MonoBehaviour
 {
     public int index=0;
-    int x=0;
-    int y=0;
+    public int x=0;
+    public int y=0;
 
     private Action<int,int> swapFunc=null;
 
@@ -41,7 +41,7 @@ public class NumberBox : MonoBehaviour
         this.gameObject.transform.localPosition=end;
     }
     public bool IsEmpty(){
-        return index==16;
+        return index==9;
     }
     void OnMouseDown()
     {
@@ -49,5 +49,10 @@ public class NumberBox : MonoBehaviour
             swapFunc(x,y);
         }
     } 
+
+    public void SeñalWin(){
+        Destroy(gameObject);
+        
+    }
     
 }
