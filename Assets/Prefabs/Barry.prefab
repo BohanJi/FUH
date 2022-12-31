@@ -46,6 +46,7 @@ GameObject:
   - component: {fileID: 8077283061051706206}
   - component: {fileID: 656912126}
   - component: {fileID: 1701706017}
+  - component: {fileID: 1745873676}
   m_Layer: 8
   m_Name: Barry
   m_TagString: Player
@@ -109,7 +110,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 3835f9f75e4634b488931ef44f106f41, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -214,3 +215,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BarryIcon: {fileID: 0}
+--- !u!114 &1745873676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 790148674424101010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a5c8d4e3c16b004bb0c52823078cd6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  elemento: {fileID: 0}

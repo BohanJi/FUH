@@ -13,8 +13,7 @@ public class BrokeObjects : MonoBehaviour
         {
             if (collision.gameObject.CompareTag("Player"))
             {
-                List<string> toolList = collision.gameObject.GetComponent<PlayerController>().GetItemList();
-                foreach (string tool in toolList)
+                foreach (string tool in GlobalVariable.ActivesItems)
                 {
                     if(tool == itemNameNeeded) this.gameObject.SetActive(false);
                 }

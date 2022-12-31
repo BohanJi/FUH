@@ -47020,6 +47020,10 @@ PrefabInstance:
       propertyPath: BarryIcon
       value: 
       objectReference: {fileID: 1704557917}
+    - target: {fileID: 1745873676, guid: 17faadc948b360b47971a04d371a6bcc, type: 3}
+      propertyPath: elemento
+      value: 
+      objectReference: {fileID: 2064572794}
     - target: {fileID: 790148674424101010, guid: 17faadc948b360b47971a04d371a6bcc, type: 3}
       propertyPath: m_Name
       value: Barry
@@ -47066,10 +47070,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5912701295498475903, guid: 17faadc948b360b47971a04d371a6bcc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7964978497559888693, guid: 17faadc948b360b47971a04d371a6bcc, type: 3}
-      propertyPath: m_SortingOrder
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -48014,24 +48014,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6393198228688946091, guid: 36f496f23dd817549afceae240b308b7, type: 3}
   m_PrefabInstance: {fileID: 1737892752}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1745873668 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 790148674424101010, guid: 17faadc948b360b47971a04d371a6bcc, type: 3}
-  m_PrefabInstance: {fileID: 1201839292}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1745873676
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1745873668}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a5c8d4e3c16b004bb0c52823078cd6f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elemento: {fileID: 2064572794}
 --- !u!1 &1757200946
 GameObject:
   m_ObjectHideFlags: 0
