@@ -54,7 +54,6 @@ public class ControladorPuzzle : MonoBehaviour
     public void SetTimeText()
 	{    
         seconds = (int)tiempoActual % 60; 
-        Debug.Log(seconds +" "+mins);
         if((int)tiempoActual % 60==0 && aux==0){
             mins+=1;
             aux=1;

@@ -15,6 +15,7 @@ public class Puzzle : MonoBehaviour
     public GameObject objetActivable1;
     public GameObject objetActivable2;
     public GameObject objetActivable3;
+    public GameObject objetActivable4;
     public int ganador=0;
 
     public TextMeshProUGUI info;
@@ -23,7 +24,8 @@ public class Puzzle : MonoBehaviour
 
     void Start()
     {
-       controladorPuzzle=FindObjectOfType<ControladorPuzzle>();
+        
+        controladorPuzzle=FindObjectOfType<ControladorPuzzle>();
     }
 
     void Update()
@@ -31,6 +33,7 @@ public class Puzzle : MonoBehaviour
         if(controladorPuzzle.tiempoActivo && inicio==0){
             Init();
             inicio=1;
+            objetActivable4.SetActive(true);
             for (int i = 0; i<100; i++){
                 Mezclar();
             }
@@ -69,6 +72,7 @@ public class Puzzle : MonoBehaviour
             objetActivable1.SetActive(true);
             objetActivable2.SetActive(true);
             objetActivable3.SetActive(true);
+            objetActivable4.SetActive(false);
             controladorPuzzle.DesactivarTemporizador();
             SetInfoText("Enhorabuena");
         }
@@ -143,7 +147,6 @@ public class Puzzle : MonoBehaviour
             for (int j = 0; j<3; j++){
 
                 if(boxes[j,i].index!=cont){
-                    Debug.Log("toco caja "+boxes[i,j].index + " xy "+i+j+" y cont "+ cont);
                     return ganador=false;
                 }
                 cont++;

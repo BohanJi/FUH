@@ -9,10 +9,12 @@ public class BotonAceptarPuzzle : MonoBehaviour
     public GameObject objetActivable1;
     public GameObject objetActivable2;
     public GameObject objetActivable3;
+    public GameObject objetActivable4;
     // Start is called before the first frame update
     void Start()
     {
         puzzle=FindObjectOfType<Puzzle>();
+        objetActivable4.SetActive(false);
     }
 
     void OnMouseDown()
