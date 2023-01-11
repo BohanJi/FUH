@@ -10,7 +10,7 @@ public class ControladorPuzzle : MonoBehaviour
 
     public TextMeshProUGUI info;
 
-    private float tiempoActual; 
+    public float tiempoActual; 
     public bool tiempoActivo=false;
     public int puntos;
     public int mins=0;

@@ -34,9 +34,9 @@ public class Puzzle : MonoBehaviour
             Init();
             inicio=1;
             objetActivable4.SetActive(true);
-            for (int i = 0; i<100; i++){
-                Mezclar();
-            }
+            //for (int i = 0; i<100; i++){
+            //    Mezclar();
+           // }
         }
         
         
@@ -69,12 +69,24 @@ public class Puzzle : MonoBehaviour
                     
                 }
             }
+            int k =(int)controladorPuzzle.tiempoActual;
+            Debug.Log(k);
             objetActivable1.SetActive(true);
             objetActivable2.SetActive(true);
             objetActivable3.SetActive(true);
             objetActivable4.SetActive(false);
             controladorPuzzle.DesactivarTemporizador();
-            SetInfoText("Enhorabuena");
+             if(k<65){
+               SetInfoText("Enhorabuena consigues la medalla de ORO porquehas tardaddo "+k+  
+               " segundos en completar el puzzle" );
+            }else if(k>=65 && k<120){
+               SetInfoText("Enhorabuena consigues la medalla de PLATA porquehas tardaddo "+k+  
+               " segundos en completar el puzzle" );
+            }else if(k>=120){
+               SetInfoText("Enhorabuena consigues la medalla de BRONCE porquehas tardaddo "+k+  
+               " segundos en completar el puzzle" );
+            }
+            
         }
     }
 

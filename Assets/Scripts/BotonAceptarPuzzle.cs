@@ -27,7 +27,7 @@ public class BotonAceptarPuzzle : MonoBehaviour
             objetActivable2.SetActive(false);
             objetActivable3.SetActive(false);
 
-            objetActivable3.transform.position=new Vector2(500f,170f);
+            objetActivable3.transform.position=new Vector2(410f,220f);
         }
        
     } 
