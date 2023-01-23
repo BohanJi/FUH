@@ -37965,10 +37965,6 @@ PrefabInstance:
       propertyPath: BarryIcon
       value: 
       objectReference: {fileID: 1174716646}
-    - target: {fileID: 2028641014, guid: 17faadc948b360b47971a04d371a6bcc, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 26.55
-      objectReference: {fileID: 0}
     - target: {fileID: 790148674424101010, guid: 17faadc948b360b47971a04d371a6bcc, type: 3}
       propertyPath: m_Name
       value: Barry

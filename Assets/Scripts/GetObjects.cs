@@ -13,7 +13,7 @@ public class GetObjects : MonoBehaviour
         {
             if (collision.gameObject.CompareTag("Player"))
             {
-                collision.gameObject.GetComponent<PlayerController>().AddItem(itemName);
+                GlobalVariable.ActivesItems.Add(itemName);
                 gameObject.SetActive(false);
             }
         }

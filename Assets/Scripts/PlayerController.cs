@@ -9,7 +9,6 @@ public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 5f;
 
-    List<string> ActivesItems = new();
     Rigidbody2D rigidbody2d;
     Animator animator;
 
@@ -42,16 +41,6 @@ public class PlayerController : MonoBehaviour
         animator.SetFloat("Horizontal", movement.x);
         animator.SetFloat("Vertical", movement.y);
         animator.SetFloat("Speed", movement.sqrMagnitude);
-    }
-
-    public void AddItem(string ItemName)
-    {
-        ActivesItems.Add(ItemName);
-    }
-
-    public List<string> GetItemList()
-    {
-        return ActivesItems;
     }
 
     public Vector2 GetPosition()
