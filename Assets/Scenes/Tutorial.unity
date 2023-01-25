@@ -414,6 +414,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1854004211}
     m_Modifications:
+    - target: {fileID: 6357170282508373224, guid: 400d21dbff1e8c74ab98d054dd0f6274, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6357170282508373224, guid: 400d21dbff1e8c74ab98d054dd0f6274, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8241252285166323243, guid: 400d21dbff1e8c74ab98d054dd0f6274, type: 3}
       propertyPath: m_Name
       value: Arbusto (8)
@@ -471,6 +479,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1854004211}
     m_Modifications:
+    - target: {fileID: 6357170282508373224, guid: 400d21dbff1e8c74ab98d054dd0f6274, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6357170282508373224, guid: 400d21dbff1e8c74ab98d054dd0f6274, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8241252285166323243, guid: 400d21dbff1e8c74ab98d054dd0f6274, type: 3}
       propertyPath: m_Name
       value: Arbusto (5)
@@ -666,6 +682,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1854004211}
     m_Modifications:
+    - target: {fileID: 6357170282508373224, guid: 400d21dbff1e8c74ab98d054dd0f6274, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6357170282508373224, guid: 400d21dbff1e8c74ab98d054dd0f6274, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8241252285166323243, guid: 400d21dbff1e8c74ab98d054dd0f6274, type: 3}
       propertyPath: m_Name
       value: Arbusto (2)
@@ -912,8 +936,8 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 261052793
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0.000081419945, y: 0, z: 0}
@@ -37843,6 +37867,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1854004211}
     m_Modifications:
+    - target: {fileID: 6357170282508373224, guid: 400d21dbff1e8c74ab98d054dd0f6274, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6357170282508373224, guid: 400d21dbff1e8c74ab98d054dd0f6274, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8241252285166323243, guid: 400d21dbff1e8c74ab98d054dd0f6274, type: 3}
       propertyPath: m_Name
       value: Arbusto (1)
@@ -38013,6 +38045,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7964978497559888693, guid: 17faadc948b360b47971a04d371a6bcc, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17faadc948b360b47971a04d371a6bcc, type: 3}
 --- !u!1001 &609159085
@@ -38022,6 +38058,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1854004211}
     m_Modifications:
+    - target: {fileID: 6357170282508373224, guid: 400d21dbff1e8c74ab98d054dd0f6274, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6357170282508373224, guid: 400d21dbff1e8c74ab98d054dd0f6274, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8241252285166323243, guid: 400d21dbff1e8c74ab98d054dd0f6274, type: 3}
       propertyPath: m_Name
       value: Arbusto
@@ -38106,6 +38150,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1854004211}
     m_Modifications:
+    - target: {fileID: 6357170282508373224, guid: 400d21dbff1e8c74ab98d054dd0f6274, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6357170282508373224, guid: 400d21dbff1e8c74ab98d054dd0f6274, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8241252285166323243, guid: 400d21dbff1e8c74ab98d054dd0f6274, type: 3}
       propertyPath: m_Name
       value: Arbusto (11)
@@ -38173,6 +38225,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1854004211}
     m_Modifications:
+    - target: {fileID: 6357170282508373224, guid: 400d21dbff1e8c74ab98d054dd0f6274, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6357170282508373224, guid: 400d21dbff1e8c74ab98d054dd0f6274, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8241252285166323243, guid: 400d21dbff1e8c74ab98d054dd0f6274, type: 3}
       propertyPath: m_Name
       value: Arbusto (3)
@@ -38235,6 +38295,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1854004211}
     m_Modifications:
+    - target: {fileID: 6357170282508373224, guid: 400d21dbff1e8c74ab98d054dd0f6274, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6357170282508373224, guid: 400d21dbff1e8c74ab98d054dd0f6274, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8241252285166323243, guid: 400d21dbff1e8c74ab98d054dd0f6274, type: 3}
       propertyPath: m_Name
       value: Arbusto (4)
@@ -38514,6 +38582,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1854004211}
     m_Modifications:
+    - target: {fileID: 6357170282508373224, guid: 400d21dbff1e8c74ab98d054dd0f6274, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6357170282508373224, guid: 400d21dbff1e8c74ab98d054dd0f6274, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8241252285166323243, guid: 400d21dbff1e8c74ab98d054dd0f6274, type: 3}
       propertyPath: m_Name
       value: Arbusto (7)
@@ -38596,6 +38672,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: aea90a6cd14e230418f14c3efccb47a3, type: 3}
     - target: {fileID: 7328901118737245827, guid: c0b166ee1aedcdc4aacd4f7c2f5f7794, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7328901118737245827, guid: c0b166ee1aedcdc4aacd4f7c2f5f7794, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
@@ -38657,6 +38737,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1854004211}
     m_Modifications:
+    - target: {fileID: 6357170282508373224, guid: 400d21dbff1e8c74ab98d054dd0f6274, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6357170282508373224, guid: 400d21dbff1e8c74ab98d054dd0f6274, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8241252285166323243, guid: 400d21dbff1e8c74ab98d054dd0f6274, type: 3}
       propertyPath: m_Name
       value: Arbusto (9)
@@ -38714,6 +38802,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1854004211}
     m_Modifications:
+    - target: {fileID: 6357170282508373224, guid: 400d21dbff1e8c74ab98d054dd0f6274, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6357170282508373224, guid: 400d21dbff1e8c74ab98d054dd0f6274, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8241252285166323243, guid: 400d21dbff1e8c74ab98d054dd0f6274, type: 3}
       propertyPath: m_Name
       value: Arbusto (10)
@@ -39160,8 +39256,8 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 261052793
+  m_SortingLayer: -2
   m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0.000081419945, y: 0, z: 0}
@@ -51290,6 +51386,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1854004211}
     m_Modifications:
+    - target: {fileID: 6357170282508373224, guid: 400d21dbff1e8c74ab98d054dd0f6274, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6357170282508373224, guid: 400d21dbff1e8c74ab98d054dd0f6274, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8241252285166323243, guid: 400d21dbff1e8c74ab98d054dd0f6274, type: 3}
       propertyPath: m_Name
       value: Arbusto (12)
@@ -51430,6 +51534,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1854004211}
     m_Modifications:
+    - target: {fileID: 6357170282508373224, guid: 400d21dbff1e8c74ab98d054dd0f6274, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6357170282508373224, guid: 400d21dbff1e8c74ab98d054dd0f6274, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8241252285166323243, guid: 400d21dbff1e8c74ab98d054dd0f6274, type: 3}
       propertyPath: m_Name
       value: Arbusto (6)
