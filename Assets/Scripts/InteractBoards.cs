@@ -2,15 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Interact_Remove : MonoBehaviour
+public class InteractBoards : MonoBehaviour
 {
 
-    Animator anim;
+    public GameObject objetActivable1;
+    public GameObject objetActivable2;
 
     void Start()
     {
-        anim=gameObject.GetComponent<Animator>();
-
+        objetActivable1.SetActive(false);
+        objetActivable2.SetActive(false);
     }
     
     private void OnCollisionStay2D(Collision2D collision)
@@ -20,14 +21,10 @@ public class Interact_Remove : MonoBehaviour
         {
             if (collision.gameObject.CompareTag("Player"))
             {
-                anim.SetTrigger("Cortar");
-                Invoke("Desaparecer", (float)1.2);
+                Destroy(gameObject);
+                objetActivable1.SetActive(true);
+
             }
         }
-    }
-
-
-    void Desaparecer(){
-        Destroy(gameObject);
     }
 }

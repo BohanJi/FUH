@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6357170282508373224}
   - component: {fileID: 2087817539237093892}
   - component: {fileID: 4709000622805576576}
+  - component: {fileID: -1028712074744946680}
   m_Layer: 0
   m_Name: Arbusto
   m_TagString: Untagged
@@ -114,3 +115,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b87cdfb155f93f146a6bf0ca667ba246, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &-1028712074744946680
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8241252285166323243}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d12960e5cd62670409666544cb5632b6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
