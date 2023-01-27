@@ -2,21 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InteractBoards : MonoBehaviour
+public class InteractPalanca : MonoBehaviour
 {
-
     public GameObject objetActivable1;
-    public GameObject objetActivable2;
-    public GameObject objetActivable3;
     public bool agarrado=false;
+   
 
-    void Start()
-    {
-        objetActivable1.SetActive(false);
-        objetActivable2.SetActive(false);
-        objetActivable3.SetActive(false);
-    }
-    
     private void OnCollisionStay2D(Collision2D collision)
     {
         float interaction = Input.GetAxis("Interaction");
