@@ -34,9 +34,9 @@ public class Puzzle : MonoBehaviour
             Init();
             inicio=1;
             objetActivable4.SetActive(true);
-            //for (int i = 0; i<100; i++){
-            //    Mezclar();
-           // }
+            for (int i = 0; i<100; i++){
+                Mezclar();
+            }
         }
         
         
@@ -61,31 +61,7 @@ public class Puzzle : MonoBehaviour
         int dy=getDy(x,y);
         Swap(x,y,dx,dy);
         if(IsWin()==true){
-            for (int i = 0; i<3; i++)
-            {
-                for (int j = 0; j<3; j++){
-
-                    boxes[j,i].SeñalWin();
-                    
-                }
-            }
-            int k =(int)controladorPuzzle.tiempoActual;
-            Debug.Log(k);
-            objetActivable1.SetActive(true);
-            objetActivable2.SetActive(true);
-            objetActivable3.SetActive(true);
-            objetActivable4.SetActive(false);
-            controladorPuzzle.DesactivarTemporizador();
-             if(k<65){
-               SetInfoText("Enhorabuena consigues la medalla de ORO porquehas tardaddo "+k+  
-               " segundos en completar el puzzle" );
-            }else if(k>=65 && k<120){
-               SetInfoText("Enhorabuena consigues la medalla de PLATA porquehas tardaddo "+k+  
-               " segundos en completar el puzzle" );
-            }else if(k>=120){
-               SetInfoText("Enhorabuena consigues la medalla de BRONCE porquehas tardaddo "+k+  
-               " segundos en completar el puzzle" );
-            }
+            Invoke("Victoria", 1);
             
         }
     }
@@ -200,4 +176,31 @@ public class Puzzle : MonoBehaviour
 		info.text =newInfo.ToString();
         
 	}
+
+    public void Victoria(){
+        for (int i = 0; i<3; i++)
+        {
+            for (int j = 0; j<3; j++){
+                
+                boxes[j,i].SeñalWin();
+                
+            }
+        }
+        int k =(int)controladorPuzzle.tiempoActual;
+        objetActivable1.SetActive(true);
+        objetActivable2.SetActive(true);
+        objetActivable3.SetActive(true);
+        objetActivable4.SetActive(false);
+        controladorPuzzle.DesactivarTemporizador();
+        if(k<65){
+            SetInfoText("Enhorabuena consigues la medalla de ORO porquehas tardaddo "+k+  
+            " segundos en completar el puzzle" );
+        }else if(k>=65 && k<120){
+            SetInfoText("Enhorabuena consigues la medalla de PLATA porquehas tardaddo "+k+  
+            " segundos en completar el puzzle" );
+        }else if(k>=120){
+            SetInfoText("Enhorabuena consigues la medalla de BRONCE porquehas tardaddo "+k+  
+            " segundos en completar el puzzle" );
+        }
+    }
 }
