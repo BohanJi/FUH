@@ -11,6 +11,7 @@ TagManager:
   - miranda
   - chatarrero
   - enemy
+  - point
   layers:
   - Default
   - TransparentFX

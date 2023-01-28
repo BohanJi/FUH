@@ -1,40 +1,61 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Spawner : MonoBehaviour
 {
 
     [SerializeField] GameObject enemyPrefab;
     List<GameObject> enemilist;
+    [SerializeField] GameObject pointPrefab;
+    List<GameObject> pointlist;
+
     [SerializeField] float spwanTime=1;
     float timer;
     [SerializeField] Transform limitD;
     [SerializeField] Transform limitI;
+
+    public bool stop;
     // Start is called before the first frame update
     void Start()
     {
         enemilist=new List<GameObject>();
+        pointlist=new List<GameObject>();
         timer=spwanTime;
     }
 
     // Update is called once per frame
     void Update()
     {
-        timer-=Time.deltaTime;
+        // Camera has fixed width and height on every screen solution
+        if(!stop){
+            timer-=Time.deltaTime;
 
-        if(timer<0){
-            Spawn();
+            if(timer<0){
+                Spawn();
+            }
         }
+        
         
     }
 
     void Spawn()
     {
         Vector2 spawnPos= new Vector2(Random.Range(limitI.position.x, limitD.position.x), transform.position.y);
-        GameObject newEnemy=getFirstEnmyNoActive();
-        newEnemy.transform.position=spawnPos;
-        newEnemy.SetActive(true);
+        
+        int rndType=Random.Range(0,3);
+        if(rndType==0){
+            GameObject newPoint=getFirstPointNoActive();
+            newPoint.transform.position=spawnPos;
+            newPoint.SetActive(true);
+        }else{
+            GameObject newEnemy=getFirstEnmyNoActive();
+            newEnemy.transform.position=spawnPos;
+            newEnemy.SetActive(true);
+        }
+        
+        
         timer=spwanTime;
     }
 
@@ -53,5 +74,22 @@ public class Spawner : MonoBehaviour
         newEnemy.SetActive(false);
         enemilist.Add(newEnemy);
         return newEnemy;
+    }
+
+
+    GameObject getFirstPointNoActive(){
+        for(int i=0; i<pointlist.Count;i++){
+            if(!pointlist[i].activeInHierarchy){
+                return pointlist[i];
+            }
+        }
+        return createPoint();
+    }
+    GameObject createPoint(){
+        GameObject newPoint= Instantiate(pointPrefab);
+        newPoint.transform.parent=gameObject.transform;
+        newPoint.SetActive(false);
+        pointlist.Add(newPoint);
+        return newPoint;
     }
 }
