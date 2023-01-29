@@ -98,7 +98,7 @@ public class PlayerMinijuego : MonoBehaviour
                 collision.gameObject.SetActive(false);
             }
 
-            if(puntos==7){
+            if(puntos==6){
                 isWin=true;
                 animator.SetBool("Infected",isWin);
                 srpiteRende.color=saveColor;

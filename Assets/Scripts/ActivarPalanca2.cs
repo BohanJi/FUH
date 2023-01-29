@@ -6,6 +6,9 @@ public class ActivarPalanca2 : MonoBehaviour
 {
     public GameObject objetActivable1;//palanca estado1
     public GameObject puente;//puente
+    public GameObject puente2;//puente
+    public GameObject baldosa1;//puente
+    public GameObject baldosa2;//puente
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +23,10 @@ public class ActivarPalanca2 : MonoBehaviour
             if (collision.gameObject.CompareTag("Player"))
             {
                 objetActivable1.SetActive(true);
+                puente2.SetActive(true);
                 transformaciones();
+                baldosa1.SetActive(false);
+                baldosa2.SetActive(false);
                 Destroy(gameObject);
 
             }
