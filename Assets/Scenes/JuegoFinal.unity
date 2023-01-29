@@ -1109,6 +1109,7 @@ MonoBehaviour:
   limitD: {fileID: 330685421}
   limitI: {fileID: 1152599819}
   infectedColor: {r: 1, g: 0.39215687, b: 0.39215687, a: 1}
+  saveColor: {r: 0.48235294, g: 0.9372549, b: 0.5137255, a: 1}
   contador: {fileID: 34901053}
   info: {fileID: 1617695543}
   objetActivable1: {fileID: 1617695541}

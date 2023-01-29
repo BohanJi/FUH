@@ -16,8 +16,8 @@ public class InteractPalanca : MonoBehaviour
             if (collision.gameObject.CompareTag("Player"))
             {
                 agarrado=true;
-                Destroy(gameObject);
                 objetActivable1.SetActive(true);
+                Destroy(gameObject);
 
             }
         }
