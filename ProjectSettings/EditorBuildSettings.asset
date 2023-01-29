@@ -56,4 +56,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MinijuegoMapa.unity
     guid: 5df11995692c59e4882e53b27ffbadd9
+  - enabled: 1
+    path: Assets/Scenes/Bosque2.unity
+    guid: d146b9bfbf9fead4f9613074c8df44bc
+  - enabled: 1
+    path: Assets/Scenes/Skyran.unity
+    guid: 0e71a8f3715a07545a19470639dc30f3
   m_configObjects: {}
