@@ -44,4 +44,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/bosque2/bosque2Final.unity
     guid: c15743761c0af944da590d9d4ddfc248
+  - enabled: 1
+    path: Assets/Scenes/Granja.unity
+    guid: a5b5c99d0d08cd14ea0d99a4a6424c05
   m_configObjects: {}

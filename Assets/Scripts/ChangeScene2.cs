@@ -33,13 +33,11 @@ public class ChangeScene2 : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Player"))
         {
-            if (interaction != 0)
+            if (gameObject.activeInHierarchy)
             {
-                if (gameObject.activeInHierarchy)
-                {
-                    StartCoroutine(SceneLoad());
-                }
+                StartCoroutine(SceneLoad());
             }
+            
         }
     }
 
