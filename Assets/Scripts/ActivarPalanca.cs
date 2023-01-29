@@ -8,12 +8,14 @@ public class ActivarPalanca : MonoBehaviour
     public GameObject objetActivable1;
     public GameObject objetActivable2;//palanca estado1
     public GameObject objetActivable3;//palanca estado2
+    public GameObject puente2;//puente
     // Start is called before the first frame update
     void Start()
     {
         palanca=FindObjectOfType<InteractPalanca>();
         objetActivable2.SetActive(false);
         objetActivable3.SetActive(false);
+        puente2.SetActive(false);
     }
 
     private void OnCollisionStay2D(Collision2D collision)
