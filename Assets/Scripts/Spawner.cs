@@ -17,9 +17,13 @@ public class Spawner : MonoBehaviour
     [SerializeField] Transform limitI;
 
     public bool stop;
+    public GameObject objetActivable1;
+    public GameObject objetActivable2;
     // Start is called before the first frame update
     void Start()
     {
+        objetActivable1.SetActive(false);
+        objetActivable2.SetActive(false);
         enemilist=new List<GameObject>();
         pointlist=new List<GameObject>();
         timer=spwanTime;

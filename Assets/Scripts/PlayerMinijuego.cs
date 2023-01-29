@@ -14,12 +14,16 @@ public class PlayerMinijuego : MonoBehaviour
     Animator animator;
     private bool cambiar=false;
 
-    bool isInfected;
+    bool isInfected,isWin;
     [SerializeField] Color infectedColor;
+    [SerializeField] Color saveColor;
     SpriteRenderer srpiteRende;
     public TextMeshProUGUI contador;
     int puntos;
     
+    public TextMeshProUGUI info;
+    public GameObject objetActivable1;
+    public GameObject objetActivable2;
 
     private void Awake(){
         srpiteRende=GetComponent<SpriteRenderer>();
@@ -34,11 +38,22 @@ public class PlayerMinijuego : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(isInfected){
-
-            if(Input.GetKeyDown(KeyCode.Space)){
-                SceneManager.LoadScene("JuegoFinal");
+        if(isInfected||isWin){
+            
+            if(isWin){
+                SetInfoText("!Lo has logrado!" +"\n"+"Pulsa intro para continuar." );
+                if(Input.GetKeyDown(KeyCode.Return)){
+                    //SceneManager.LoadScene("JuegoFinal");
+                    Debug.Log("se pasa a la siguiente escena");
+                }
+            }else{
+                if(Input.GetKeyDown(KeyCode.Space)){
+                    SceneManager.LoadScene("JuegoFinal");
+                }
             }
+            objetActivable1.SetActive(true);
+            objetActivable2.SetActive(true);
+            
         }else{
             if(Input.GetMouseButtonDown(0)){
             cambiar=!cambiar;
@@ -74,15 +89,20 @@ public class PlayerMinijuego : MonoBehaviour
             srpiteRende.color=infectedColor;
             collision.gameObject.GetComponentInParent<Spawner>().stop=true;
             collision.gameObject.SetActive(false);
-            Debug.Log("over");
         }
         if(collision.CompareTag("point")){
 
             if(!isInfected){
                 puntos++;
                 SetCountText(); 
-                Debug.Log(puntos);
                 collision.gameObject.SetActive(false);
+            }
+
+            if(puntos==7){
+                isWin=true;
+                animator.SetBool("Infected",isWin);
+                srpiteRende.color=saveColor;
+                collision.gameObject.GetComponentInParent<Spawner>().stop=true;
             }
             
         }
@@ -91,6 +111,11 @@ public class PlayerMinijuego : MonoBehaviour
     public void SetCountText()
 	{        
 		contador.text = "Puntos: " + puntos.ToString();
+        
+	}
+    public void SetInfoText(string newInfo)
+	{        
+		info.text =newInfo.ToString();
         
 	}
 

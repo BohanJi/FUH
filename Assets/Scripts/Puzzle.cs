@@ -193,13 +193,13 @@ public class Puzzle : MonoBehaviour
         objetActivable4.SetActive(false);
         controladorPuzzle.DesactivarTemporizador();
         if(k<65){
-            SetInfoText("Enhorabuena consigues la medalla de ORO porquehas tardaddo "+k+  
+            SetInfoText("Enhorabuena consigues la medalla de ORO porque has tardado "+k+  
             " segundos en completar el puzzle" );
         }else if(k>=65 && k<120){
-            SetInfoText("Enhorabuena consigues la medalla de PLATA porquehas tardaddo "+k+  
+            SetInfoText("Enhorabuena consigues la medalla de PLATA porque has tardado "+k+  
             " segundos en completar el puzzle" );
         }else if(k>=120){
-            SetInfoText("Enhorabuena consigues la medalla de BRONCE porquehas tardaddo "+k+  
+            SetInfoText("Enhorabuena consigues la medalla de BRONCE porque has tardado "+k+  
             " segundos en completar el puzzle" );
         }
     }
