@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BotonAceptar : MonoBehaviour
 {
@@ -31,6 +32,7 @@ public class BotonAceptar : MonoBehaviour
     {
         if(controladorjuego.tiempoActivo==false && i.inicio==1){
             Debug.Log("se pasa a la siguiente escena");
+            SceneManager.LoadScene("Towcala");
         }else{
             controladorjuego.ActivarTemporizador();
             objetActivable1.SetActive(false);

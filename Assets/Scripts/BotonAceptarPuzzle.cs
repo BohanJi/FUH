@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BotonAceptarPuzzle : MonoBehaviour
 {
@@ -21,6 +22,7 @@ public class BotonAceptarPuzzle : MonoBehaviour
     {
         if(controladorPuzzle.tiempoActivo==false && puzzle.inicio==1){
             Debug.Log("se pasa a la siguiente escena");
+            SceneManager.LoadScene("Skyran");
         }else{
             controladorPuzzle.ActivarTemporizador();
             objetActivable1.SetActive(false);
