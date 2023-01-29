@@ -47,4 +47,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Granja.unity
     guid: a5b5c99d0d08cd14ea0d99a4a6424c05
+  - enabled: 1
+    path: Assets/Scenes/Towcala.unity
+    guid: 935c5b6e61e3d7743be9f3eda8eb1d33
+  - enabled: 1
+    path: Assets/Scenes/JuegoFinal.unity
+    guid: 259a643192fbc6543a095f7a873c0471
+  - enabled: 1
+    path: Assets/Scenes/MinijuegoMapa.unity
+    guid: 5df11995692c59e4882e53b27ffbadd9
   m_configObjects: {}
