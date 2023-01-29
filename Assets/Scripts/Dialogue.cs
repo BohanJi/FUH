@@ -99,21 +99,6 @@ public class Dialogue : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (gameObject.name == "Miranda")
-        {
-            if (GameObject.FindGameObjectWithTag("miranda") == null)
-            {
-                rd.NextDialogueNumber(characterName);
-            }
-        }
-        if (gameObject.name == "Miranda")
-        {
-            elemeto.SetActive(true);
-        }
-        if (gameObject.name == "Chatarero" && GameObject.FindGameObjectWithTag("miranda") != null)
-        {
-            GameObject.FindGameObjectWithTag("miranda").SetActive(false);
-        }
 
         if (interactuable && collision.gameObject.CompareTag("Player"))
         {

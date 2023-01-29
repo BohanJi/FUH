@@ -8,23 +8,18 @@ Tutorial_6;0;2;InfoBot_2;InfoBot;"¡Recuerda pulsar la tecla ""E"" cuando estés
 Tutorial_7;0;3;InfoBot_2;InfoBot;Si lo consigues, llegarás al poblado, ¡buena suerte!
 Miranda1;0;0;Miranda;Miranda;Hola hijo, buenos días ¿Dónde estabas?
 Miranda1;0;1;Miranda;Miranda;Bueno es igual, necesito que me hagas un favor.
-Miranda1;0;2;Miranda;Miranda;Por favor, ve a la ferreteria del prueblo a por un poco de  aceite.
-Miranda1;0;3;Miranda;Miranda;Esta nueva enfermedad me está afectando más de lo que esperaba.
-Miranda1;0;4;Miranda;Miranda;Muchas gracias hijo.
-Miranda2;1;0;Miranda;Miranda;Barry, debes irte de Ferder, el lugar ya no es seguro.
-Miranda2;1;1;Miranda;Miranda;La enfermedad nos esta pasando factura a todos, y no hay nadie que nos pueda ayudar.
-Miranda2;1;2;Miranda;Miranda;Si te vas lejos puede que encuentres a alguien que sepa como ayudarnos.
-Miranda2;1;3;Miranda;Miranda;Toma el camino del bosque, quizá el granjero Hamilton te pueda ayudar.
+Miranda1;0;2;Miranda;Miranda;Sabes que te quiro, por eso debes irte .
+Miranda1;0;3;Miranda;Miranda;Ya no queda ni aceite en la Ferretería . . . 
+Miranda1;0;4;Miranda;Miranda;todos nuestroa conocidos están .
+Miranda1;0;5;Miranda;Miranda;Barry debes irte, puede que el viejo Granjero te ayude.
+Miranda1;0;6;Miranda;Miranda;Sal del pueblo por el norte, porfa hijo . . .
+Miranda1;0;7;Miranda;Miranda;no quiero verte enfermo a ti también.
+Miranda1;0;8;Miranda;Miranda;
 Chatarero;0;0;Chatarero;Chatarero;Bienvenido pequeño, ¿Qué necesitas?
-Chatarero;0;1;Chatarero;Chatarero;O vaya, así que un poco de aceite para tu mamá.
-Chatarero;0;2;Chatarero;Chatarero;Espera un segundo, enseguida te lo doy.
-Chatarero;0;3;Chatarero;Chatarero;… 
-Chatarero;0;4;Chatarero;Chatarero;… 
-Chatarero;0;5;Chatarero;Chatarero;… 
-Chatarero;0;6;Chatarero;Chatarero;… 
-Chatarero;0;7;Chatarero;Chatarero;Perfecto, aquí lo tienes.
-Chatarero;0;8;Chatarero;Chatarero;Espero que esta nueva enfermedad se acabe ya, o esto no afectará a todos.
+Chatarero;0;1;Chatarero;Chatarero;Me temo que solo nos quedan alguna tuercas.
+Chatarero;0;2;Chatarero;Chatarero;Esta enfermedad va a acabar con la aldea.
+Chatarero;0;3;Chatarero;Chatarero;
 Ermitaño;0;0;Ermitaño;Ermitaño;Si encuentras madera te diré como levantar el puente
 Ermitaño;1;1;Ermitaño;Ermitaño;Ten la llave para buscar la palanca
-Ermitaño;2;2;Ermitaño;Ermitaño;Yo escondí la palanca, porque tenia miedo de que la ingección se expandiese…
+Ermitaño;2;2;Ermitaño;Ermitaño;Yo escondí la palanca, porque tenia miedo de que la ingección se expandiese . . .
 Palanca;1;0;Palanca;Palanca;Genial ya está arreglada
