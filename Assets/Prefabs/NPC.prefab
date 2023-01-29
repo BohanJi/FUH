@@ -105,6 +105,7 @@ MonoBehaviour:
   dialoguePanel: {fileID: 0}
   dialogueText: {fileID: 0}
   typingTime: 0
+  elemeto: {fileID: 0}
 --- !u!61 &9164774452780300503
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -182,8 +183,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4314073304801179687}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.06, y: 1.49, z: 0}
-  m_LocalScale: {x: 0.3434, y: 0.3434, z: 0.3434}
+  m_LocalPosition: {x: -0.11, y: 5.52, z: 0}
+  m_LocalScale: {x: 0.7760153, y: 0.5454566, z: 0.3434}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1016018735926098563}
