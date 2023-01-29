@@ -156,7 +156,7 @@ MonoBehaviour:
   misobjs:
   - {fileID: 2341509767271144250, guid: 96c2a2afcc87ac547a2020cbc92ff758, type: 3}
   tmin: 2
-  tmax: 7
+  tmax: 6
   inicio: 0
   contador: {fileID: 726588064}
   puntos: 0
@@ -1176,7 +1176,7 @@ MonoBehaviour:
   misobjs:
   - {fileID: 1552503270263102767, guid: d6795cfe22daa95459d52674e936e803, type: 3}
   tmin: 1
-  tmax: 1.7
+  tmax: 1.5
   inicio: 0
   contador: {fileID: 726588064}
   puntos: 0
@@ -1306,7 +1306,7 @@ MonoBehaviour:
   objetActivable4: {fileID: 1692968606}
   info: {fileID: 1692968608}
   i: {fileID: 0}
-  tiempoMaximo: 15
+  tiempoMaximo: 25
   slider: {fileID: 800074527}
   tiempoActivo: 0
 --- !u!4 &1402504740

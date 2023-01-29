@@ -152,8 +152,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb097b22796770548aea6e19e7fa4e96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 7270133284957836790, guid: 41763ee8773afe9459fb60ea06e525ba, type: 3}
-  pointPrefab: {fileID: 3755036972202313854, guid: 6f94fcf09dd8b8d42b25527732459712, type: 3}
+  enemyPrefab: {fileID: 521824114502314704, guid: 36e5632598fdcff44bbebb95832d905e, type: 3}
+  pointPrefab: {fileID: 2759539562344906237, guid: 8c38cd57193be33479ddfad31395431f, type: 3}
   spwanTime: 0.75
   limitD: {fileID: 330685421}
   limitI: {fileID: 1152599819}
