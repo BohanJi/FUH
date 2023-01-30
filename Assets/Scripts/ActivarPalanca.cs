@@ -4,7 +4,7 @@ using TMPro;
 using System.Collections;
 using System;
 using Unity.VisualScripting;
-
+//PROGRAMADO POR DAVID VENTAS SANCHEZ 29/01/2023
 
     
 public class ActivarPalanca : MonoBehaviour
@@ -18,7 +18,6 @@ public class ActivarPalanca : MonoBehaviour
     public GameObject objetActivable2;//palanca estado1
     public GameObject objetActivable3;//palanca estado2
     public GameObject puente2;//puente
-    int fin=0;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,27 +38,22 @@ public class ActivarPalanca : MonoBehaviour
                 Invoke("Espera", 1);
             }
         }
-
-        if (interaction != 0 && fin==1)
-        {
-            if (collision.gameObject.CompareTag("Player"))
-            {
-                dialoguePanel.SetActive(false);
-                Destroy(gameObject);
-            }
-        }
     }
 
     void Espera(){
         objetActivable2.SetActive(true);
         StartDialogue();
-        fin=1;
     }
 
     private void StartDialogue()
     {
         dialoguePanel.SetActive(true);
         dialogueText.text = "Genial ya puedo activar la palanca";
+        Invoke("fin", 1);
     }
 
+    void fin(){
+        dialoguePanel.SetActive(false);
+        Destroy(gameObject);
+    }
 }

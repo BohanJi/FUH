@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+//PROGRAMADO POR DAVID VENTAS SANCHEZ 29/01/2023
 public class BotonAceptar : MonoBehaviour
 {
 

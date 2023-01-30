@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 using UnityEngine.InputSystem;
 using TMPro;
-
+//PROGRAMADO POR DAVID VENTAS SANCHEZ 29/01/2023
 public class PlayerMinijuego : MonoBehaviour
 {
     [SerializeField] float speed;
@@ -110,7 +110,7 @@ public class PlayerMinijuego : MonoBehaviour
 
     public void SetCountText()
 	{        
-		contador.text = "Puntos: " + puntos.ToString();
+		contador.text = puntos.ToString()+"/6";
         
 	}
     public void SetInfoText(string newInfo)
