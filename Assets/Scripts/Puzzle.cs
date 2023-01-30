@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 using TMPro;
-
+//PROGRAMADO POR DAVID VENTAS SANCHEZ 29/01/2023
 public class Puzzle : MonoBehaviour
 {
     public NumberBox boxPrefab;

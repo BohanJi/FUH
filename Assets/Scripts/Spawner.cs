@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+//PROGRAMADO POR DAVID VENTAS SANCHEZ 29/01/2023
 public class Spawner : MonoBehaviour
 {
 
