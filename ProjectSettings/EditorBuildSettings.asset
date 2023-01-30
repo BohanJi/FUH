@@ -62,4 +62,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Skyran.unity
     guid: 0e71a8f3715a07545a19470639dc30f3
+  - enabled: 1
+    path: Assets/Scenes/Fin.unity
+    guid: a0e1b058711e2d74e96dbaa61db466d6
   m_configObjects: {}
