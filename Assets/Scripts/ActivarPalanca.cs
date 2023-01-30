@@ -4,7 +4,7 @@ using TMPro;
 using System.Collections;
 using System;
 using Unity.VisualScripting;
-
+//PROGRAMADO POR DAVID VENTAS SANCHEZ 29/01/2023
 
     
 public class ActivarPalanca : MonoBehaviour

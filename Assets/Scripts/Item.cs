@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using TMPro;
-
+//PROGRAMADO POR DAVID VENTAS SANCHEZ 29/01/2023
 public class Item : MonoBehaviour
 {
     [SerializeField] private ControladorJuego controladorjuego; 
