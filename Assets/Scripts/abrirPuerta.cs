@@ -5,7 +5,7 @@ using UnityEngine;
 public class abrirPuerta : MonoBehaviour
 {
 
-    public InteractBoards tablon;
+    public ermitaño llave;
 
 
     public GameObject objetActivable3;
@@ -14,7 +14,7 @@ public class abrirPuerta : MonoBehaviour
 
     void Start()
     {
-        tablon=FindObjectOfType<InteractBoards>();
+        llave=FindObjectOfType<ermitaño>();
         objetActivable3.SetActive(false);
         objetActivable4.SetActive(false);
     }
@@ -23,7 +23,7 @@ public class abrirPuerta : MonoBehaviour
     private void OnCollisionStay2D(Collision2D collision)
     {
         float interaction = Input.GetAxis("Interaction");
-        if (interaction != 0 && tablon.agarrado==true)
+        if (interaction != 0 && llave.llave_agarrado==true)
         {
             if (collision.gameObject.CompareTag("Player"))
             {
