@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterName: 
-  dialogueMask: {fileID: 0}
+  dialogueMask: {fileID: 4314073304801179687}
   dialoguePanel: {fileID: 0}
   dialogueText: {fileID: 0}
   typingTime: 0

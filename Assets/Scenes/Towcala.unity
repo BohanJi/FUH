@@ -455,6 +455,31 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3086971265016210339, guid: 35339b437b3a05942bbb256c9c0703e4, type: 3}
   m_PrefabInstance: {fileID: 233419779}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &402955081 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1016018735926098574, guid: c62117c7c3439934c8e833847368d071, type: 3}
+  m_PrefabInstance: {fileID: 1339633909}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &402955082
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 402955081}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b3209573d82777248a9a69bbd75c6a95, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!60 &434954140 stripped
 PolygonCollider2D:
   m_CorrespondingSourceObject: {fileID: 7693720009955524651, guid: 23cf5698e1db7d1459fe20e543605d01, type: 3}
@@ -46985,6 +47010,10 @@ PrefabInstance:
       value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 7328901118737245827, guid: c0b166ee1aedcdc4aacd4f7c2f5f7794, type: 3}
+      propertyPath: m_SortingOrder
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7328901118737245827, guid: c0b166ee1aedcdc4aacd4f7c2f5f7794, type: 3}
       propertyPath: m_SortingLayerID
       value: 261052793
       objectReference: {fileID: 0}
@@ -46998,7 +47027,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8003491709667928780, guid: c0b166ee1aedcdc4aacd4f7c2f5f7794, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.0956087
+      value: 2.9428306
       objectReference: {fileID: 0}
     - target: {fileID: 8003491709667928780, guid: c0b166ee1aedcdc4aacd4f7c2f5f7794, type: 3}
       propertyPath: m_LocalPosition.x
@@ -47006,7 +47035,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8003491709667928780, guid: c0b166ee1aedcdc4aacd4f7c2f5f7794, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -10.441
+      value: -10.4017
       objectReference: {fileID: 0}
     - target: {fileID: 8003491709667928780, guid: c0b166ee1aedcdc4aacd4f7c2f5f7794, type: 3}
       propertyPath: m_LocalPosition.z
@@ -47082,7 +47111,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5695194708807189524, guid: 7601978c7183f614cb19b2fe4af60b81, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5695194708807189524, guid: 7601978c7183f614cb19b2fe4af60b81, type: 3}
       propertyPath: m_LocalScale.x
@@ -47150,6 +47179,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7601978c7183f614cb19b2fe4af60b81, type: 3}
+--- !u!1 &992333059 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4314073304801179687, guid: c62117c7c3439934c8e833847368d071, type: 3}
+  m_PrefabInstance: {fileID: 1339633909}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1074702489
 GameObject:
   m_ObjectHideFlags: 0
@@ -47252,7 +47286,7 @@ PrefabInstance:
     - target: {fileID: 1745873676, guid: 17faadc948b360b47971a04d371a6bcc, type: 3}
       propertyPath: elemento
       value: 
-      objectReference: {fileID: 2064572794}
+      objectReference: {fileID: 0}
     - target: {fileID: 790148674424101010, guid: 17faadc948b360b47971a04d371a6bcc, type: 3}
       propertyPath: m_Name
       value: Barry
@@ -47415,32 +47449,36 @@ Transform:
   m_Father: {fileID: 1658274867}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1498766444
+--- !u!1001 &1339633909
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1412814834, guid: c62117c7c3439934c8e833847368d071, type: 3}
-      propertyPath: m_Name
-      value: ChatareroDialogueMask
-      objectReference: {fileID: 0}
-    - target: {fileID: 1412814834, guid: c62117c7c3439934c8e833847368d071, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1016018735926098563, guid: c62117c7c3439934c8e833847368d071, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1016018735926098563, guid: c62117c7c3439934c8e833847368d071, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5983544
+      objectReference: {fileID: 0}
+    - target: {fileID: 1016018735926098563, guid: c62117c7c3439934c8e833847368d071, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5983544
+      objectReference: {fileID: 0}
+    - target: {fileID: 1016018735926098563, guid: c62117c7c3439934c8e833847368d071, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5983544
       objectReference: {fileID: 0}
     - target: {fileID: 1016018735926098563, guid: c62117c7c3439934c8e833847368d071, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.58
+      value: 3.97
       objectReference: {fileID: 0}
     - target: {fileID: 1016018735926098563, guid: c62117c7c3439934c8e833847368d071, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.66
+      value: 5.62
       objectReference: {fileID: 0}
     - target: {fileID: 1016018735926098563, guid: c62117c7c3439934c8e833847368d071, type: 3}
       propertyPath: m_LocalPosition.z
@@ -47475,44 +47513,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1016018735926098572, guid: c62117c7c3439934c8e833847368d071, type: 3}
-      propertyPath: m_Color.b
-      value: 0.31764707
-      objectReference: {fileID: 0}
-    - target: {fileID: 1016018735926098572, guid: c62117c7c3439934c8e833847368d071, type: 3}
-      propertyPath: m_Color.g
-      value: 0.3372549
-      objectReference: {fileID: 0}
-    - target: {fileID: 1016018735926098572, guid: c62117c7c3439934c8e833847368d071, type: 3}
-      propertyPath: m_Color.r
-      value: 0.42352945
-      objectReference: {fileID: 0}
-    - target: {fileID: 1016018735926098573, guid: c62117c7c3439934c8e833847368d071, type: 3}
-      propertyPath: rd
+      propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1016018735926098573, guid: c62117c7c3439934c8e833847368d071, type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1016018735926098573, guid: c62117c7c3439934c8e833847368d071, type: 3}
-      propertyPath: elemeto
-      value: 
-      objectReference: {fileID: 2064572794}
-    - target: {fileID: 1016018735926098573, guid: c62117c7c3439934c8e833847368d071, type: 3}
-      propertyPath: typingTime
-      value: 0.02
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 21300000, guid: 6daa485636bfa704ca52338bb4b614f9, type: 3}
     - target: {fileID: 1016018735926098573, guid: c62117c7c3439934c8e833847368d071, type: 3}
       propertyPath: dialogueMask
       value: 
-      objectReference: {fileID: 1498766445}
+      objectReference: {fileID: 992333059}
     - target: {fileID: 1016018735926098573, guid: c62117c7c3439934c8e833847368d071, type: 3}
       propertyPath: dialogueText
       value: 
       objectReference: {fileID: 233419780}
     - target: {fileID: 1016018735926098573, guid: c62117c7c3439934c8e833847368d071, type: 3}
       propertyPath: characterName
-      value: Chatarero
+      value: Mendoza
       objectReference: {fileID: 0}
     - target: {fileID: 1016018735926098573, guid: c62117c7c3439934c8e833847368d071, type: 3}
       propertyPath: dialoguePanel
@@ -47520,27 +47534,10 @@ PrefabInstance:
       objectReference: {fileID: 233419781}
     - target: {fileID: 1016018735926098574, guid: c62117c7c3439934c8e833847368d071, type: 3}
       propertyPath: m_Name
-      value: Chatarero
-      objectReference: {fileID: 0}
-    - target: {fileID: 1016018735926098574, guid: c62117c7c3439934c8e833847368d071, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1016018735926098574, guid: c62117c7c3439934c8e833847368d071, type: 3}
-      propertyPath: m_TagString
-      value: chatarrero
-      objectReference: {fileID: 0}
-    - target: {fileID: 4314073304801179687, guid: c62117c7c3439934c8e833847368d071, type: 3}
-      propertyPath: m_Name
-      value: ChatareroDialogueMask
+      value: Mendoza
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c62117c7c3439934c8e833847368d071, type: 3}
---- !u!1 &1498766445 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4314073304801179687, guid: c62117c7c3439934c8e833847368d071, type: 3}
-  m_PrefabInstance: {fileID: 1498766444}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1537461999
 GameObject:
   m_ObjectHideFlags: 0
@@ -93963,11 +93960,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2064572794 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1016018735926098574, guid: c62117c7c3439934c8e833847368d071, type: 3}
-  m_PrefabInstance: {fileID: 1498766444}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2118681391
 GameObject:
   m_ObjectHideFlags: 0
