@@ -65,4 +65,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Skyran.unity
     guid: 0e71a8f3715a07545a19470639dc30f3
+  - enabled: 1
+    path: Assets/Scenes/MinijuegoFolletos.unity
+    guid: 673d3861131ccbe4abae97cc6a8a00bc
+  - enabled: 1
+    path: Assets/Scenes/Towcala 1.unity
+    guid: 18f136edbfeab0a48ab1b8fb043eaa9b
   m_configObjects: {}

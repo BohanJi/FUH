@@ -42,12 +42,12 @@ public class PlayerMinijuego : MonoBehaviour
             
             if(isWin){
                 SetInfoText("!Lo has logrado!" +"\n"+"Pulsa intro para continuar." );
-                if(Input.GetKeyDown(KeyCode.Return)){
+                if(Input.GetKeyDown(KeyCode.E)){
                     //SceneManager.LoadScene("JuegoFinal");
                     Debug.Log("se pasa a la siguiente escena");
                 }
             }else{
-                if(Input.GetKeyDown(KeyCode.Space)){
+                if(Input.GetKeyDown(KeyCode.E)){
                     SceneManager.LoadScene("JuegoFinal");
                 }
             }
