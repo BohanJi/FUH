@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 using UnityEngine.InputSystem;
 using TMPro;
+using UnityEngine.SceneManagement;
 //PROGRAMADO POR DAVID VENTAS SANCHEZ 29/01/2023
 public class PlayerMinijuego : MonoBehaviour
 {
@@ -41,10 +42,11 @@ public class PlayerMinijuego : MonoBehaviour
         if(isInfected||isWin){
             
             if(isWin){
-                SetInfoText("!Lo has logrado!" +"\n"+"Pulsa intro para continuar." );
+                SetInfoText("!Lo has logrado!" +"\n"+"Pulsa la E para continuar." );
                 if(Input.GetKeyDown(KeyCode.E)){
                     //SceneManager.LoadScene("JuegoFinal");
                     Debug.Log("se pasa a la siguiente escena");
+                    SceneManager.LoadScene("Fin");
                 }
             }else{
                 if(Input.GetKeyDown(KeyCode.E)){
