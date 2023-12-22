@@ -53,6 +53,7 @@ public class ermitaño : MonoBehaviour
             if (collision.gameObject.CompareTag("Player"))
             {
                 StartDialogue(3);
+                llave.SetActive(false);
                 Invoke("fin", 2);
                 
             }
